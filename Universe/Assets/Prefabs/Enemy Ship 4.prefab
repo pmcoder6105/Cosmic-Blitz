@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1974790343777846965}
   - component: {fileID: 5513141172772393756}
   - component: {fileID: 7675623322924752117}
+  - component: {fileID: 1404026969367498070}
   m_Layer: 0
   m_Name: Enemy Ship 4
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142873143297904293}
-  m_LocalRotation: {x: -0.27680475, y: 0.6506759, z: -0.6506759, w: 0.27680475}
+  m_LocalRotation: {x: -0.27680543, y: 0.65067565, z: -0.65067565, w: 0.27680543}
   m_LocalPosition: {x: -22.6, y: 0.000000003149239, z: 19}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
@@ -95,5 +96,17 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10.113388, y: 7.894248, z: 13.461275}
+  m_Center: {x: 0.34030667, y: -0.060401756, z: -0.93837345}
+--- !u!114 &1404026969367498070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142873143297904293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36d83e7849571147a86f3a02a8c6435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

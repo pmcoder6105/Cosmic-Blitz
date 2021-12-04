@@ -16,16 +16,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Translate(-.2f, 0, 0);
-        }
+        ProcessMovement();
+        ProcessLazers();
+    }
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Translate(.2f, 0, 0);
-        }
-
+    void ProcessLazers()
+    {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             leftLazer.Play();
@@ -37,5 +33,23 @@ public class Player : MonoBehaviour
             leftLazer.Stop();
             rightLazer.Stop();
         }
+    }
+
+    void ProcessMovement()
+    {
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Translate(-.2f, 0, 0);
+        }
+
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Translate(.2f, 0, 0);
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Destroy(gameObject);
     }
 }
