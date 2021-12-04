@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField] ParticleSystem leftLazer;
     [SerializeField] ParticleSystem rightLazer;
+    [SerializeField] ParticleSystem explosion;
+    [SerializeField] ParticleSystem thruster;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +52,11 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        GetComponent<MeshRenderer>().enabled = false;
+        thruster.Stop();
+        if (!explosion.isPlaying)
+        {
+            explosion.Play();
+        }
     }
 }
