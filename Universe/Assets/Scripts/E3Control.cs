@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class E3Control : MonoBehaviour
 {
+    [SerializeField] ParticleSystem leftLazers;
+    [SerializeField] ParticleSystem rightLazers;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +16,20 @@ public class E3Control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > 4)
+        if (Time.time > 2)
         {
-            Debug.Log("Test");
+            leftLazers.Stop();
+            rightLazers.Stop();
+        }
+        if (Time.time > 4.5)
+        {
+            leftLazers.Play();
+            rightLazers.Play();
+        }
+        if (Time.time > 5.5)
+        {
+            leftLazers.Stop();
+            rightLazers.Stop();
         }
     }
 }

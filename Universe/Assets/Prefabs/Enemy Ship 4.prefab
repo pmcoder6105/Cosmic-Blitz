@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1404026969367498070}
   m_Layer: 0
   m_Name: Enemy Ship 4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,8 +96,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.113388, y: 7.894248, z: 13.461275}
-  m_Center: {x: 0.34030667, y: -0.060401756, z: -0.93837345}
+  m_Size: {x: 7.8391027, y: 7.894248, z: 13.461275}
+  m_Center: {x: 0.13836156, y: -0.060401756, z: -0.93837345}
 --- !u!114 &1404026969367498070
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -50,7 +50,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -4827,9 +4827,10 @@ GameObject:
   - component: {fileID: 6153819926681978773}
   - component: {fileID: 5879373913099945192}
   - component: {fileID: 2989899621092498483}
+  - component: {fileID: 1392927415}
   m_Layer: 0
   m_Name: Enemy Ship 3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4938,6 +4939,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4f735ba1b425749946bcc9bfad6d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftLazers: {fileID: 7300675657917653736}
+  rightLazers: {fileID: 346054501537373514}
+--- !u!95 &1392927415
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2875672905420608461}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8819991291288995935
 GameObject:
   m_ObjectHideFlags: 0
@@ -4988,7 +5011,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -20,8 +21,21 @@ public class Player : MonoBehaviour
     {
         ProcessMovement();
         ProcessLazers();
+        DebugKeys();
     }
 
+    void DebugKeys()
+    {
+        if (Input.GetKey(KeyCode.C))
+        {
+            GetComponent<BoxCollider>().enabled = false;
+        }
+        if (Input.GetKey(KeyCode.L))
+        {
+            LoadNextScene();
+        }
+    }
+    
     void ProcessLazers()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
@@ -53,10 +67,39 @@ public class Player : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<Player>().enabled = false;
+        Invoke(nameof(LoadCurrentScene), 2f);
         thruster.Stop();
         if (!explosion.isPlaying)
         {
             explosion.Play();
         }
+    }
+
+    void OnParticleCollision(GameObject other)
+    {
+        GetComponent<Player>().enabled = false;
+        Invoke(nameof(LoadCurrentScene), 2f);
+        if (other.gameObject.tag == "Enemy")
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+            thruster.Stop();
+            if (!explosion.isPlaying)
+            {
+                explosion.Play();
+            }
+        }
+    }
+
+    void LoadCurrentScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+    void LoadNextScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }
