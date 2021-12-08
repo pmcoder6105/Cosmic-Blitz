@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] int hitPoints = 4;
+    [SerializeField] ParticleSystem explosion;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +23,15 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            hitPoints = hitPoints - 1;    
-            if (hitPoints < 1)
+            hitPoints = hitPoints - 1;
+            if (hitPoints == 0)
             {
-                Destroy(gameObject);
+                GetComponent<MeshRenderer>().enabled = false;
+                GetComponent<Enemy>().enabled = false;
+                GetComponent<BoxCollider>().enabled = false;
+                GetComponent<Animator>().enabled = false;
+                explosion.Play();
             }
-            
-            
         }
     }
 }

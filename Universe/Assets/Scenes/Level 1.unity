@@ -10174,18 +10174,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &546403074138167335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649369556492179417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da4f735ba1b425749946bcc9bfad6d59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &649369556492179417
 GameObject:
   m_ObjectHideFlags: 0
@@ -10199,7 +10187,6 @@ GameObject:
   - component: {fileID: 3345884400814657032}
   - component: {fileID: 8902972081767793537}
   - component: {fileID: 9186441649820107004}
-  - component: {fileID: 546403074138167335}
   - component: {fileID: 3380927260078024355}
   m_Layer: 0
   m_Name: Enemy Ship 3
@@ -10335,6 +10322,73 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &4288036940762863761
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7709556048919818505}
+    m_Modifications:
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1.3920947e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -1.3920947e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 278045363374764664, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+      propertyPath: m_Name
+      value: Explosion enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+--- !u!4 &4288036940762863762 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 273990511445645224, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+  m_PrefabInstance: {fileID: 4288036940762863761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4288036940762863764 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 80479494480225388, guid: 1fd2c76bd8246de4eb47eb8a5ed2d700, type: 3}
+  m_PrefabInstance: {fileID: 4288036940762863761}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7223656910805764926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10468,6 +10522,7 @@ Transform:
   m_Children:
   - {fileID: 1554435386}
   - {fileID: 2135658473}
+  - {fileID: 4288036940762863762}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0.000000009225687, y: 359.7869, z: -0.00000004713345}
@@ -10554,3 +10609,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 3
+  explosion: {fileID: 4288036940762863764}
