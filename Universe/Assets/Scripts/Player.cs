@@ -77,17 +77,19 @@ public class Player : MonoBehaviour
     }
 
     void OnParticleCollision(GameObject other)
-    {
-        GetComponent<Player>().enabled = false;
-        Invoke(nameof(LoadCurrentScene), 2f);
+    {        
         if (other.gameObject.tag == "Enemy")
         {
+            GetComponent<Player>().enabled = false;
+            Invoke(nameof(LoadCurrentScene), 2f);
             GetComponent<MeshRenderer>().enabled = false;
             thruster.Stop();
             if (!explosion.isPlaying)
             {
                 explosion.Play();
             }
+            leftLazer.Stop();
+            rightLazer.Stop();
         }
     }
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] int hitPoints = 4;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,15 @@ public class Enemy : MonoBehaviour
 
     void OnParticleCollision(GameObject other)
     {
-        Destroy(gameObject);
+        if (other.gameObject.tag == "Player")
+        {
+            hitPoints = hitPoints - 1;    
+            if (hitPoints < 1)
+            {
+                Destroy(gameObject);
+            }
+            
+            
+        }
     }
 }
