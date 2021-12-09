@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] int hitPoints = 4;
     [SerializeField] ParticleSystem explosion;
+    [SerializeField] ParticleSystem hitSpark;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,8 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            hitPoints = hitPoints - 1;
+            hitPoints = hitPoints - 1;                        
+            hitSpark.Play();            
             if (hitPoints == 0)
             {
                 GetComponent<MeshRenderer>().enabled = false;
