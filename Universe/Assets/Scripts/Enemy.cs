@@ -30,8 +30,12 @@ public class Enemy : MonoBehaviour
                 GetComponent<Enemy>().enabled = false;
                 GetComponent<BoxCollider>().enabled = false;
                 GetComponent<Animator>().enabled = false;
-                explosion.Play();
+                if (!explosion.isPlaying)
+                {
+                    explosion.Play();
+                }
             }
         }
     }
+   
 }
