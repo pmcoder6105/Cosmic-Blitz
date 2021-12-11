@@ -9,6 +9,11 @@ public class Player : MonoBehaviour
     [SerializeField] ParticleSystem rightLazer;
     [SerializeField] ParticleSystem explosion;
     [SerializeField] ParticleSystem thruster;
+    [SerializeField] int healthPoints = 3;
+    [SerializeField] GameObject Heart1;
+    [SerializeField] GameObject Heart2;
+    [SerializeField] GameObject Heart3;
+    [SerializeField] GameObject Heart4;
 
     // Start is called before the first frame update
     void Start()
@@ -66,30 +71,71 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<Player>().enabled = false;
-        Invoke(nameof(LoadCurrentScene), 2f);
-        thruster.Stop();
-        if (!explosion.isPlaying)
+        healthPoints = healthPoints - 1;
+        if (healthPoints == 3)
         {
-            explosion.Play();
+            Destroy(Heart4);
         }
+        if (healthPoints == 2)
+        {
+            Destroy(Heart3);
+        }
+        if (healthPoints == 1)
+        {
+            Destroy(Heart2);
+        }
+        if (healthPoints == 0)
+        {
+            Destroy(Heart1);
+        }
+        if (healthPoints == 0)
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<Player>().enabled = false;
+            Invoke(nameof(LoadCurrentScene), 2f);
+            thruster.Stop();
+            if (!explosion.isPlaying)
+            {
+                explosion.Play();
+            }
+        }
+                    
     }
 
     void OnParticleCollision(GameObject other)
     {        
         if (other.gameObject.tag == "Enemy")
         {
-            GetComponent<Player>().enabled = false;
-            Invoke(nameof(LoadCurrentScene), 2f);
-            GetComponent<MeshRenderer>().enabled = false;
-            thruster.Stop();
-            if (!explosion.isPlaying)
+            healthPoints = healthPoints - 1;
+            if (healthPoints == 3)
             {
-                explosion.Play();
+                Destroy(Heart4);
             }
-            leftLazer.Stop();
-            rightLazer.Stop();
+            if (healthPoints == 2)
+            {
+                Destroy(Heart3);
+            }
+            if (healthPoints == 1)
+            {
+                Destroy(Heart2);
+            }
+            if (healthPoints == 0)
+            {
+                Destroy(Heart1);
+            }
+            if (healthPoints == 0)
+            {
+                GetComponent<Player>().enabled = false;
+                Invoke(nameof(LoadCurrentScene), 2f);
+                GetComponent<MeshRenderer>().enabled = false;
+                thruster.Stop();
+                if (!explosion.isPlaying)
+                {
+                    explosion.Play();
+                }
+                leftLazer.Stop();
+                rightLazer.Stop();
+            }            
         }
     }
 

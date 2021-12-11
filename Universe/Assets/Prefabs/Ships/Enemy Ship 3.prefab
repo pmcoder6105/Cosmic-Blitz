@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36d83e7849571147a86f3a02a8c6435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 3
+  hitPoints: 2
   explosion: {fileID: 6973924137459775094}
   hitSpark: {fileID: 6656740914471305343}
 --- !u!95 &1392927415

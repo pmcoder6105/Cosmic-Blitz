@@ -3,7 +3,15 @@ guid: 766783fc43814e04ea93987b3d2ac631
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - leftLazer: {instanceID: 0}
+  - rightLazer: {instanceID: 0}
+  - explosion: {instanceID: 0}
+  - thruster: {instanceID: 0}
+  - Heart1: {instanceID: 0}
+  - Heart2: {instanceID: 0}
+  - Heart3: {instanceID: 0}
+  - Heart4: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
