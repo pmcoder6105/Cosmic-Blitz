@@ -14,11 +14,12 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject Heart2;
     [SerializeField] GameObject Heart3;
     [SerializeField] GameObject Heart4;
+    [SerializeField] float controlSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -60,12 +61,12 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(-.2f, 0, 0);
+            transform.Translate(-.2f * Time.deltaTime * controlSpeed, 0, 0);
         }
 
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(.2f, 0, 0);
+            transform.Translate(.2f * Time.deltaTime * controlSpeed, 0, 0);
         }
     }
 
@@ -90,16 +91,21 @@ public class Player : MonoBehaviour
         }
         if (healthPoints == 0)
         {
-            GetComponent<MeshRenderer>().enabled = false;
-            GetComponent<Player>().enabled = false;
-            Invoke(nameof(LoadCurrentScene), 2f);
-            thruster.Stop();
-            if (!explosion.isPlaying)
-            {
-                explosion.Play();
-            }
+            CrashSequence();
         }
-                    
+
+    }
+
+    public void CrashSequence()
+    {
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<Player>().enabled = false;
+        Invoke(nameof(LoadCurrentScene), 2f);
+        thruster.Stop();
+        if (!explosion.isPlaying)
+        {
+            explosion.Play();
+        }
     }
 
     void OnParticleCollision(GameObject other)
@@ -139,7 +145,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void LoadCurrentScene()
+    public void LoadCurrentScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
@@ -149,5 +155,19 @@ public class Player : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
         SceneManager.LoadScene(nextSceneIndex);
+    }
+    
+    public void DestroyWhenEnemyFinishes()
+    {
+        GetComponent<BoxCollider>().enabled = false;
+        GetComponent<Player>().enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
+        leftLazer.Stop();
+        rightLazer.Stop();
+        Destroy(Heart1);
+        Destroy(Heart2);
+        Destroy(Heart3);
+        Destroy(Heart4);
+        thruster.Stop();
     }
 }

@@ -6,14 +6,18 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] int hitPoints = 4;
     [SerializeField] ParticleSystem explosion;
+    [SerializeField] ParticleSystem explosionPlayer;
     [SerializeField] ParticleSystem hitSpark;
     [SerializeField] ParticleSystem leftLazer;
     [SerializeField] ParticleSystem rightLazer;
+    
+    Player player;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
@@ -21,6 +25,7 @@ public class Enemy : MonoBehaviour
     {
         
     }
+
 
     void OnParticleCollision(GameObject other)
     {
@@ -46,5 +51,18 @@ public class Enemy : MonoBehaviour
             }
         }
     }
-   
+
+    public void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "EnemyFinishPad")
+        {                        
+            explosionPlayer.Play();            
+            player.DestroyWhenEnemyFinishes();
+            Invoke(nameof(EnemyLoadCurrentScene), 2f);
+        }
+    }
+    void EnemyLoadCurrentScene()
+    {
+        player.LoadCurrentScene();
+    }
 }

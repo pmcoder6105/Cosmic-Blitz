@@ -116,7 +116,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 1
   explosion: {fileID: 1933012570312957535}
+  explosionPlayer: {fileID: 0}
   hitSpark: {fileID: 2289724047620188631}
+  leftLazer: {fileID: 0}
+  rightLazer: {fileID: 0}
 --- !u!95 &4333035625535586666
 Animator:
   serializedVersion: 4

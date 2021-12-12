@@ -144,6 +144,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Ship 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
+      propertyPath: controlSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
+      propertyPath: explosionPlayer
+      value: 
+      objectReference: {fileID: 368716665}
+    - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
+      propertyPath: timeToWaitBeforeExplosion
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7805315306542089303, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -195,31 +207,11 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4333035625535586666, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
   m_PrefabInstance: {fileID: 30052573}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &304851751 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7944567895617739611, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+--- !u!95 &304851757 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_PrefabInstance: {fileID: 7944567895806310437}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &304851757
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304851751}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &319134923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5619676214414632171, guid: 6938cff0d92a73941a9d55d3e5f31b21, type: 3}
@@ -230,6 +222,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5619676214414632174, guid: 6938cff0d92a73941a9d55d3e5f31b21, type: 3}
   m_PrefabInstance: {fileID: 5619676214733109280}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &368716665 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7534470696319395331, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+  m_PrefabInstance: {fileID: 7660452178307804211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &410333261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410333265}
+  - component: {fileID: 410333264}
+  - component: {fileID: 410333263}
+  - component: {fileID: 410333262}
+  m_Layer: 0
+  m_Name: EnemyFinishPad
+  m_TagString: EnemyFinishPad
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &410333262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410333261}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &410333263
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410333261}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 69d393aa2d52fd34f80a48e88145a81c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &410333264
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410333261}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &410333265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410333261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1167657, y: -23.47, z: 19}
+  m_LocalScale: {x: 70.868, y: 1, z: 14.683}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &675417307
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +636,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Ship 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1404026969367498070, guid: 61910646e34965744aba479328a63b40, type: 3}
+      propertyPath: controlSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1404026969367498070, guid: 61910646e34965744aba479328a63b40, type: 3}
+      propertyPath: explosionPlayer
+      value: 
+      objectReference: {fileID: 368716665}
     - target: {fileID: 6861283093555098201, guid: 61910646e34965744aba479328a63b40, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -642,6 +744,18 @@ PrefabInstance:
     - target: {fileID: 4906301324782515485, guid: ce146af15b6cf3446ad9c6cf94603ccd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.00000006604654
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879373913099945192, guid: ce146af15b6cf3446ad9c6cf94603ccd, type: 3}
+      propertyPath: controlSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879373913099945192, guid: ce146af15b6cf3446ad9c6cf94603ccd, type: 3}
+      propertyPath: explosionPlayer
+      value: 
+      objectReference: {fileID: 368716665}
+    - target: {fileID: 5879373913099945192, guid: ce146af15b6cf3446ad9c6cf94603ccd, type: 3}
+      propertyPath: timeToWaitBeforeExplosion
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce146af15b6cf3446ad9c6cf94603ccd, type: 3}
@@ -10324,6 +10438,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Ship 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1404026969367498070, guid: 61910646e34965744aba479328a63b40, type: 3}
+      propertyPath: controlSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1404026969367498070, guid: 61910646e34965744aba479328a63b40, type: 3}
+      propertyPath: explosionPlayer
+      value: 
+      objectReference: {fileID: 368716665}
+    - target: {fileID: 1404026969367498070, guid: 61910646e34965744aba479328a63b40, type: 3}
+      propertyPath: timeToWaitBeforeExplosion
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6861283093555098201, guid: 61910646e34965744aba479328a63b40, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -10689,6 +10815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Ship 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
+      propertyPath: explosionPlayer
+      value: 
+      objectReference: {fileID: 368716665}
     - target: {fileID: 7805315306542089303, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -10839,6 +10969,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+      propertyPath: explosionPlayer
+      value: 
+      objectReference: {fileID: 368716665}
     - target: {fileID: 7944567895617739611, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
       propertyPath: m_Name
       value: Enemy Ship 1
@@ -11030,6 +11164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 2
   explosion: {fileID: 4288036940762863764}
+  explosionPlayer: {fileID: 368716665}
   hitSpark: {fileID: 1753188516}
   leftLazer: {fileID: 1554435388}
   rightLazer: {fileID: 2135658475}
