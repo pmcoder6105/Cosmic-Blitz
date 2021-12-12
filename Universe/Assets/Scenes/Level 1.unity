@@ -195,6 +195,31 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4333035625535586666, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
   m_PrefabInstance: {fileID: 30052573}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &304851751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7944567895617739611, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+  m_PrefabInstance: {fileID: 7944567895806310437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &304851757
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304851751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &319134923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5619676214414632171, guid: 6938cff0d92a73941a9d55d3e5f31b21, type: 3}
@@ -383,6 +408,8 @@ PlayableDirector:
     value: {fileID: 1643167452}
   - key: {fileID: -8587662935595193973, guid: b8ef63f92b2e1494aa73bb932b729bde, type: 2}
     value: {fileID: 722754965}
+  - key: {fileID: -5594409106318383937, guid: b8ef63f92b2e1494aa73bb932b729bde, type: 2}
+    value: {fileID: 304851757}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &726281760
@@ -10834,11 +10861,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7944567895617739686, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: -1.3920947e-15
       objectReference: {fileID: 0}
     - target: {fileID: 7944567895617739686, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -1.3920947e-15
       objectReference: {fileID: 0}
     - target: {fileID: 7944567895617739686, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
       propertyPath: m_LocalRotation.y
