@@ -11004,6 +11004,8 @@ MonoBehaviour:
   hitPoints: 2
   explosion: {fileID: 4288036940762863764}
   hitSpark: {fileID: 1753188516}
+  leftLazer: {fileID: 1554435388}
+  rightLazer: {fileID: 2135658475}
 --- !u!54 &9186441649820107005
 Rigidbody:
   m_ObjectHideFlags: 0

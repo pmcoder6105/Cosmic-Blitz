@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] int hitPoints = 4;
     [SerializeField] ParticleSystem explosion;
     [SerializeField] ParticleSystem hitSpark;
+    [SerializeField] ParticleSystem leftLazer;
+    [SerializeField] ParticleSystem rightLazer;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,11 @@ public class Enemy : MonoBehaviour
                 GetComponent<Enemy>().enabled = false;
                 GetComponent<BoxCollider>().enabled = false;
                 GetComponent<Animator>().enabled = false;
+                if (leftLazer && rightLazer != null)
+                {
+                    Destroy(leftLazer);
+                    Destroy(rightLazer);
+                }
                 if (!explosion.isPlaying)
                 {
                     explosion.Play();
