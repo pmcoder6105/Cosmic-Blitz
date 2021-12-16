@@ -9,24 +9,25 @@ public class Player : MonoBehaviour
     [SerializeField] ParticleSystem rightLazer;
     [SerializeField] ParticleSystem explosion;
     [SerializeField] ParticleSystem thruster;
-    [SerializeField] int healthPoints = 3;
+    [SerializeField] ParticleSystem hitSpark;
+    [SerializeField] int healthPoints = 8;
     [SerializeField] GameObject Heart1;
     [SerializeField] GameObject Heart2;
     [SerializeField] GameObject Heart3;
     [SerializeField] GameObject Heart4;
-    [SerializeField] float controlSpeed;
+    [SerializeField] float controlSpeed = 75;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        ProcessMovement();
-        ProcessLazers();
+        ProcessShip();
         DebugKeys();
     }
 
@@ -42,7 +43,7 @@ public class Player : MonoBehaviour
         }
     }
     
-    void ProcessLazers()
+    void ProcessShip()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -55,10 +56,6 @@ public class Player : MonoBehaviour
             leftLazer.Stop();
             rightLazer.Stop();
         }
-    }
-
-    void ProcessMovement()
-    {
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(-.2f * Time.deltaTime * controlSpeed, 0, 0);
@@ -72,26 +69,24 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        hitSpark.Play();
         healthPoints = healthPoints - 1;
-        if (healthPoints == 3)
+        if (healthPoints == 6)
         {
             Destroy(Heart4);
         }
-        if (healthPoints == 2)
+        if (healthPoints == 4)
         {
             Destroy(Heart3);
         }
-        if (healthPoints == 1)
+        if (healthPoints == 2)
         {
             Destroy(Heart2);
         }
         if (healthPoints == 0)
         {
-            Destroy(Heart1);
-        }
-        if (healthPoints == 0)
-        {
             CrashSequence();
+            Destroy(Heart1);
         }
 
     }
@@ -112,23 +107,21 @@ public class Player : MonoBehaviour
     {        
         if (other.gameObject.tag == "Enemy")
         {
+            hitSpark.Play();
             healthPoints = healthPoints - 1;
-            if (healthPoints == 3)
+            if (healthPoints == 6)
             {
                 Destroy(Heart4);
             }
-            if (healthPoints == 2)
+            if (healthPoints == 4)
             {
                 Destroy(Heart3);
             }
-            if (healthPoints == 1)
+            if (healthPoints == 2)
             {
                 Destroy(Heart2);
             }
-            if (healthPoints == 0)
-            {
-                Destroy(Heart1);
-            }
+            
             if (healthPoints == 0)
             {
                 GetComponent<Player>().enabled = false;
@@ -141,6 +134,7 @@ public class Player : MonoBehaviour
                 }
                 leftLazer.Stop();
                 rightLazer.Stop();
+                Destroy(Heart1);
             }            
         }
     }

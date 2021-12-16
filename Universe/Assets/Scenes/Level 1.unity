@@ -317,8 +317,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410333261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1167657, y: -23.47, z: 19}
-  m_LocalScale: {x: 70.868, y: 1, z: 14.683}
+  m_LocalPosition: {x: -0.7777, y: -23.47, z: 19.7803}
+  m_LocalScale: {x: 22.07633, y: 1, z: 5.0551777}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -10877,6 +10877,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7660452177237939210, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452177237939210, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7660452178301677667, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -10941,6 +10949,10 @@ PrefabInstance:
       propertyPath: Heart4
       value: 
       objectReference: {fileID: 843395025}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: healthPoints
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de1618b9010423f46a917b46264f9f13, type: 3}
 --- !u!4 &7709556048919818505
