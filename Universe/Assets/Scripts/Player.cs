@@ -15,7 +15,12 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject Heart2;
     [SerializeField] GameObject Heart3;
     [SerializeField] GameObject Heart4;
+    [SerializeField] GameObject DeadHeart1;
+    [SerializeField] GameObject DeadHeart2;
+    [SerializeField] GameObject DeadHeart3;
+    [SerializeField] GameObject DeadHeart4;
     [SerializeField] float controlSpeed = 75;
+    [SerializeField] Material heartStopColor;
 
 
     // Start is called before the first frame update
@@ -71,27 +76,51 @@ public class Player : MonoBehaviour
     {
         hitSpark.Play();
         healthPoints = healthPoints - 1;
+        if (healthPoints == 7)
+        {
+            Heart4.GetComponent<Animator>().enabled = false;
+            Heart4.GetComponent<SpriteRenderer>().enabled = false;
+        }
         if (healthPoints == 6)
         {
+            Destroy(DeadHeart4);
             Destroy(Heart4);
+        }
+        if (healthPoints == 5)
+        {
+            Heart3.GetComponent<Animator>().enabled = false;
+            Heart3.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (healthPoints == 4)
         {
+            Destroy(DeadHeart3);
             Destroy(Heart3);
+        }
+        if (healthPoints == 3)
+        {
+            Heart2.GetComponent<Animator>().enabled = false;
+            Heart2.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (healthPoints == 2)
         {
+            Destroy(DeadHeart2);
             Destroy(Heart2);
+        }
+        if (healthPoints == 1)
+        {
+            Heart1.GetComponent<Animator>().enabled = false;
+            Heart1.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (healthPoints == 0)
         {
-            CrashSequence();
+            ParticleCrashSequence();
+            Destroy(DeadHeart1);
             Destroy(Heart1);
         }
 
     }
 
-    public void CrashSequence()
+    public void ParticleCrashSequence()
     {
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Player>().enabled = false;
@@ -109,34 +138,62 @@ public class Player : MonoBehaviour
         {
             hitSpark.Play();
             healthPoints = healthPoints - 1;
+            if (healthPoints == 7)
+            {
+                Heart4.GetComponent<Animator>().enabled = false;
+                Heart4.GetComponent<SpriteRenderer>().enabled = false;
+            }
             if (healthPoints == 6)
             {
+                Destroy(DeadHeart4);
                 Destroy(Heart4);
+            }
+            if (healthPoints == 5)
+            {
+                Heart3.GetComponent<Animator>().enabled = false;
+                Heart3.GetComponent<SpriteRenderer>().enabled = false;
             }
             if (healthPoints == 4)
             {
+                Destroy(DeadHeart3);
                 Destroy(Heart3);
+            }
+            if (healthPoints == 3)
+            {
+                Heart2.GetComponent<Animator>().enabled = false;
+                Heart2.GetComponent<SpriteRenderer>().enabled = false;
             }
             if (healthPoints == 2)
             {
+                Destroy(DeadHeart2);
                 Destroy(Heart2);
             }
-            
+            if (healthPoints == 1)
+            {
+                Heart1.GetComponent<Animator>().enabled = false;
+                Heart1.GetComponent<SpriteRenderer>().enabled = false;
+            }
             if (healthPoints == 0)
             {
-                GetComponent<Player>().enabled = false;
-                Invoke(nameof(LoadCurrentScene), 2f);
-                GetComponent<MeshRenderer>().enabled = false;
-                thruster.Stop();
-                if (!explosion.isPlaying)
-                {
-                    explosion.Play();
-                }
-                leftLazer.Stop();
-                rightLazer.Stop();
+                CollisionCrashSequence();
+                Destroy(DeadHeart1);
                 Destroy(Heart1);
-            }            
+            }
         }
+    }
+
+    private void CollisionCrashSequence()
+    {
+        GetComponent<Player>().enabled = false;
+        Invoke(nameof(LoadCurrentScene), 2f);
+        GetComponent<MeshRenderer>().enabled = false;
+        thruster.Stop();
+        if (!explosion.isPlaying)
+        {
+            explosion.Play();
+        }
+        leftLazer.Stop();
+        rightLazer.Stop();
     }
 
     public void LoadCurrentScene()
