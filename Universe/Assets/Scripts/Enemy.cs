@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] ParticleSystem hitSpark;
     [SerializeField] ParticleSystem leftLazer;
     [SerializeField] ParticleSystem rightLazer;
-    
     Player player;
     
 
@@ -23,15 +22,15 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
-    void OnParticleCollision(GameObject other)
+    public void OnParticleCollision(GameObject other)
     {
         if (other.gameObject.tag == "Player")
         {
-            hitPoints = hitPoints - 1;                        
+            hitPoints = hitPoints - 1;
             hitSpark.Play();            
             if (hitPoints == 0)
             {
@@ -48,6 +47,7 @@ public class Enemy : MonoBehaviour
                 {
                     explosion.Play();
                 }
+                Invoke(nameof(DestroyWhenDestroyed), 2f);
             }
         }
     }
@@ -64,5 +64,10 @@ public class Enemy : MonoBehaviour
     void EnemyLoadCurrentScene()
     {
         player.LoadCurrentScene();
+    }
+    
+    void DestroyWhenDestroyed()
+    {
+        Destroy(gameObject);
     }
 }

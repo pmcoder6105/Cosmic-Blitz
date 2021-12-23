@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] ParticleSystem explosion;
     [SerializeField] ParticleSystem thruster;
     [SerializeField] ParticleSystem hitSpark;
+    [SerializeField] ParticleSystem winBoostFlame;
     [SerializeField] int healthPoints = 8;
     [SerializeField] GameObject Heart1;
     [SerializeField] GameObject Heart2;
@@ -20,13 +21,27 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject DeadHeart3;
     [SerializeField] GameObject DeadHeart4;
     [SerializeField] float controlSpeed = 75;
-    [SerializeField] Material heartStopColor;
+    [SerializeField] float speedOfShipWhenWon = 0.1f;
+    [SerializeField] GameObject enemyShip1;
+    [SerializeField] GameObject enemyShip2;
+    [SerializeField] GameObject enemyShip3;
+    [SerializeField] GameObject enemyShip4;
+    [SerializeField] GameObject enemyShip5;
+    [SerializeField] GameObject enemyShip6;
+    [SerializeField] GameObject enemyShip7;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        DeadHeart4.GetComponent<SpriteRenderer>().enabled = true;
+        DeadHeart3.GetComponent<SpriteRenderer>().enabled = true;
+        DeadHeart2.GetComponent<SpriteRenderer>().enabled = true;
+        DeadHeart1.GetComponent<SpriteRenderer>().enabled = true;
+        Heart4.GetComponent<SpriteRenderer>().enabled = true;
+        Heart3.GetComponent<SpriteRenderer>().enabled = true;
+        Heart2.GetComponent<SpriteRenderer>().enabled = true;
+        Heart1.GetComponent<SpriteRenderer>().enabled = true;
     }
 
     // Update is called once per frame
@@ -34,6 +49,25 @@ public class Player : MonoBehaviour
     {
         ProcessShip();
         DebugKeys();
+        WinOnEnemyDestruction();
+    }
+
+    private void WinOnEnemyDestruction()
+    {
+        if (enemyShip1 == null &&
+                    enemyShip2 == null &&
+                    enemyShip3 == null &&
+                    enemyShip4 == null &&
+                    enemyShip5 == null &&
+                    enemyShip6 == null &&
+                    enemyShip7 == null)
+        {
+            transform.Translate(0, 0, speedOfShipWhenWon);
+            if (!winBoostFlame.isPlaying)
+            {
+                winBoostFlame.Play();
+            }
+        }
     }
 
     void DebugKeys()
@@ -83,8 +117,10 @@ public class Player : MonoBehaviour
         }
         if (healthPoints == 6)
         {
-            Destroy(DeadHeart4);
-            Destroy(Heart4);
+            //Destroy(DeadHeart4);
+            //Destroy(Heart4);
+            DeadHeart4.GetComponent<SpriteRenderer>().enabled = false;
+            Heart4.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (healthPoints == 5)
         {
@@ -93,8 +129,10 @@ public class Player : MonoBehaviour
         }
         if (healthPoints == 4)
         {
-            Destroy(DeadHeart3);
-            Destroy(Heart3);
+            //Destroy(DeadHeart3);
+            //Destroy(Heart3);
+            DeadHeart3.GetComponent<SpriteRenderer>().enabled = false;
+            Heart3.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (healthPoints == 3)
         {
@@ -103,8 +141,10 @@ public class Player : MonoBehaviour
         }
         if (healthPoints == 2)
         {
-            Destroy(DeadHeart2);
-            Destroy(Heart2);
+            //Destroy(DeadHeart2);
+            //Destroy(Heart2);
+            DeadHeart2.GetComponent<SpriteRenderer>().enabled = false;
+            Heart2.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (healthPoints == 1)
         {
@@ -114,10 +154,11 @@ public class Player : MonoBehaviour
         if (healthPoints == 0)
         {
             ParticleCrashSequence();
-            Destroy(DeadHeart1);
-            Destroy(Heart1);
+            //Destroy(DeadHeart1);
+            //Destroy(Heart1);
+            DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
+            Heart1.GetComponent<SpriteRenderer>().enabled = false;
         }
-
     }
 
     public void ParticleCrashSequence()
@@ -130,6 +171,8 @@ public class Player : MonoBehaviour
         {
             explosion.Play();
         }
+        leftLazer.Stop();
+        rightLazer.Stop();
     }
 
     void OnParticleCollision(GameObject other)
@@ -145,8 +188,10 @@ public class Player : MonoBehaviour
             }
             if (healthPoints == 6)
             {
-                Destroy(DeadHeart4);
-                Destroy(Heart4);
+                //Destroy(DeadHeart4);
+                //Destroy(Heart4);
+                DeadHeart4.GetComponent<SpriteRenderer>().enabled = false;
+                Heart4.GetComponent<SpriteRenderer>().enabled = false;
             }
             if (healthPoints == 5)
             {
@@ -155,8 +200,10 @@ public class Player : MonoBehaviour
             }
             if (healthPoints == 4)
             {
-                Destroy(DeadHeart3);
-                Destroy(Heart3);
+                //Destroy(DeadHeart3);
+                //Destroy(Heart3);
+                DeadHeart3.GetComponent<SpriteRenderer>().enabled = false;
+                Heart3.GetComponent<SpriteRenderer>().enabled = false;
             }
             if (healthPoints == 3)
             {
@@ -165,8 +212,10 @@ public class Player : MonoBehaviour
             }
             if (healthPoints == 2)
             {
-                Destroy(DeadHeart2);
-                Destroy(Heart2);
+                //Destroy(DeadHeart2);
+                //Destroy(Heart2);
+                DeadHeart2.GetComponent<SpriteRenderer>().enabled = false;
+                Heart2.GetComponent<SpriteRenderer>().enabled = false;
             }
             if (healthPoints == 1)
             {
@@ -176,8 +225,10 @@ public class Player : MonoBehaviour
             if (healthPoints == 0)
             {
                 CollisionCrashSequence();
-                Destroy(DeadHeart1);
-                Destroy(Heart1);
+                //Destroy(DeadHeart1);
+                //Destroy(Heart1);
+                DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
+                Heart1.GetComponent<SpriteRenderer>().enabled = false;
             }
         }
     }
@@ -219,6 +270,10 @@ public class Player : MonoBehaviour
         Destroy(Heart2);
         Destroy(Heart3);
         Destroy(Heart4);
+        Destroy(DeadHeart1);
+        Destroy(DeadHeart2);
+        Destroy(DeadHeart3);
+        Destroy(DeadHeart4);
         thruster.Stop();
     }
 }
