@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] ParticleSystem hitSpark;
     [SerializeField] ParticleSystem leftLazer;
     [SerializeField] ParticleSystem rightLazer;
+    [SerializeField] ParticleSystem e6Sparks;
     Player player;
     
 
@@ -48,6 +49,10 @@ public class Enemy : MonoBehaviour
                     explosion.Play();
                 }
                 Invoke(nameof(DestroyWhenDestroyed), 2f);
+                if (e6Sparks != null)
+                {
+                    e6Sparks.Stop();
+                }
             }
         }
     }

@@ -21,7 +21,9 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject DeadHeart3;
     [SerializeField] GameObject DeadHeart4;
     [SerializeField] float controlSpeed = 75;
-    [SerializeField] float speedOfShipWhenWon = 0.1f;
+    [SerializeField] float speedOfShipWhenWon = 5;
+    [SerializeField] int timeToWaitUntilNextLevel = 8;
+    [SerializeField] float amountToIncreaseThrusterWhenWon = 3;
     [SerializeField] GameObject enemyShip1;
     [SerializeField] GameObject enemyShip2;
     [SerializeField] GameObject enemyShip3;
@@ -29,7 +31,6 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject enemyShip5;
     [SerializeField] GameObject enemyShip6;
     [SerializeField] GameObject enemyShip7;
-
 
     // Start is called before the first frame update
     void Start()
@@ -62,14 +63,16 @@ public class Player : MonoBehaviour
                     enemyShip6 == null &&
                     enemyShip7 == null)
         {
-            transform.Translate(0, 0, speedOfShipWhenWon);
+            transform.Translate(0, 0, speedOfShipWhenWon * Time.deltaTime);
+            Invoke(nameof(LoadNextScene), timeToWaitUntilNextLevel);
             if (!winBoostFlame.isPlaying)
             {
                 winBoostFlame.Play();
             }
+            thruster.GetComponent<ParticleSystem>().startSize = amountToIncreaseThrusterWhenWon;
         }
     }
-
+    
     void DebugKeys()
     {
         if (Input.GetKey(KeyCode.C))
@@ -106,58 +109,115 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision other)
     {
-        hitSpark.Play();
-        healthPoints = healthPoints - 1;
-        if (healthPoints == 7)
+        if (other.gameObject.tag == "Enemy")
         {
-            Heart4.GetComponent<Animator>().enabled = false;
-            Heart4.GetComponent<SpriteRenderer>().enabled = false;
+            hitSpark.Play();
+            healthPoints = healthPoints - 1;
+            if (healthPoints == 7)
+            {
+                Heart4.GetComponent<Animator>().enabled = false;
+                Heart4.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 6)
+            {
+                //Destroy(DeadHeart4);
+                //Destroy(Heart4);
+                DeadHeart4.GetComponent<SpriteRenderer>().enabled = false;
+                Heart4.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 5)
+            {
+                Heart3.GetComponent<Animator>().enabled = false;
+                Heart3.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 4)
+            {
+                //Destroy(DeadHeart3);
+                //Destroy(Heart3);
+                DeadHeart3.GetComponent<SpriteRenderer>().enabled = false;
+                Heart3.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 3)
+            {
+                Heart2.GetComponent<Animator>().enabled = false;
+                Heart2.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 2)
+            {
+                //Destroy(DeadHeart2);
+                //Destroy(Heart2);
+                DeadHeart2.GetComponent<SpriteRenderer>().enabled = false;
+                Heart2.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 1)
+            {
+                Heart1.GetComponent<Animator>().enabled = false;
+                Heart1.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 0)
+            {
+                ParticleCrashSequence();
+                //Destroy(DeadHeart1);
+                //Destroy(Heart1);
+                DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
+                Heart1.GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
-        if (healthPoints == 6)
+        if (other.gameObject.tag == "Mine")
         {
-            //Destroy(DeadHeart4);
-            //Destroy(Heart4);
-            DeadHeart4.GetComponent<SpriteRenderer>().enabled = false;
-            Heart4.GetComponent<SpriteRenderer>().enabled = false;
-        }
-        if (healthPoints == 5)
-        {
-            Heart3.GetComponent<Animator>().enabled = false;
-            Heart3.GetComponent<SpriteRenderer>().enabled = false;
-        }
-        if (healthPoints == 4)
-        {
-            //Destroy(DeadHeart3);
-            //Destroy(Heart3);
-            DeadHeart3.GetComponent<SpriteRenderer>().enabled = false;
-            Heart3.GetComponent<SpriteRenderer>().enabled = false;
-        }
-        if (healthPoints == 3)
-        {
-            Heart2.GetComponent<Animator>().enabled = false;
-            Heart2.GetComponent<SpriteRenderer>().enabled = false;
-        }
-        if (healthPoints == 2)
-        {
-            //Destroy(DeadHeart2);
-            //Destroy(Heart2);
-            DeadHeart2.GetComponent<SpriteRenderer>().enabled = false;
-            Heart2.GetComponent<SpriteRenderer>().enabled = false;
-        }
-        if (healthPoints == 1)
-        {
-            Heart1.GetComponent<Animator>().enabled = false;
-            Heart1.GetComponent<SpriteRenderer>().enabled = false;
-        }
-        if (healthPoints == 0)
-        {
-            ParticleCrashSequence();
-            //Destroy(DeadHeart1);
-            //Destroy(Heart1);
-            DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
-            Heart1.GetComponent<SpriteRenderer>().enabled = false;
+            hitSpark.Play();
+            healthPoints = healthPoints - 3;
+            if (healthPoints == 7)
+            {
+                Heart4.GetComponent<Animator>().enabled = false;
+                Heart4.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 6)
+            {
+                //Destroy(DeadHeart4);
+                //Destroy(Heart4);
+                DeadHeart4.GetComponent<SpriteRenderer>().enabled = false;
+                Heart4.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 5)
+            {
+                Heart3.GetComponent<Animator>().enabled = false;
+                Heart3.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 4)
+            {
+                //Destroy(DeadHeart3);
+                //Destroy(Heart3);
+                DeadHeart3.GetComponent<SpriteRenderer>().enabled = false;
+                Heart3.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 3)
+            {
+                Heart2.GetComponent<Animator>().enabled = false;
+                Heart2.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 2)
+            {
+                //Destroy(DeadHeart2);
+                //Destroy(Heart2);
+                DeadHeart2.GetComponent<SpriteRenderer>().enabled = false;
+                Heart2.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 1)
+            {
+                Heart1.GetComponent<Animator>().enabled = false;
+                Heart1.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 0)
+            {
+                ParticleCrashSequence();
+                //Destroy(DeadHeart1);
+                //Destroy(Heart1);
+                DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
+                Heart1.GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
     }
 
