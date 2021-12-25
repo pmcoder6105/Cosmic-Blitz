@@ -5447,6 +5447,16 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198357973136645638, guid: 4b25c99149cfef8459fd272783e1c6b5, type: 3}
   m_PrefabInstance: {fileID: 3271651323145757583}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1760295683 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6477975924181767186, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+  m_PrefabInstance: {fileID: 1905033597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1760295684 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2349397800259768125, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+  m_PrefabInstance: {fileID: 1905033597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1885737767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5599,6 +5609,14 @@ PrefabInstance:
       propertyPath: InitialModule.startColor.maxColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+      propertyPath: leftLazer
+      value: 
+      objectReference: {fileID: 1760295684}
+    - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+      propertyPath: rightLazer
+      value: 
+      objectReference: {fileID: 1760295683}
     - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
       propertyPath: explosionPlayer
       value: 
@@ -6470,6 +6488,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+      propertyPath: leftLazer
+      value: 
+      objectReference: {fileID: 5876726532633540366}
+    - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+      propertyPath: rightLazer
+      value: 
+      objectReference: {fileID: 5876726532633540365}
+    - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
       propertyPath: explosionPlayer
       value: 
       objectReference: {fileID: 368716665}
@@ -6503,6 +6529,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+--- !u!198 &5876726532633540365 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6477975924181767186, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+  m_PrefabInstance: {fileID: 5876726532633540364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5876726532633540366 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2349397800259768125, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+  m_PrefabInstance: {fileID: 5876726532633540364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &5876726532633540367 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5876726532633540367, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}

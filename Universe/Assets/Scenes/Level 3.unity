@@ -1865,6 +1865,22 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8242192296864738774, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: leftLazer1
+      value: 
+      objectReference: {fileID: 8242192296759529133}
+    - target: {fileID: 8242192296864738774, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: leftLazer2
+      value: 
+      objectReference: {fileID: 8242192296759529131}
+    - target: {fileID: 8242192296864738774, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: rightLazer1
+      value: 
+      objectReference: {fileID: 8242192296759529132}
+    - target: {fileID: 8242192296864738774, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: rightLazer2
+      value: 
+      objectReference: {fileID: 8242192296759529130}
+    - target: {fileID: 8242192296864738774, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: explosionPlayer
       value: 
       objectReference: {fileID: 368716665}
@@ -1874,6 +1890,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+--- !u!198 &8242192296759529130 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 996585304, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+  m_PrefabInstance: {fileID: 8242192296759529129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8242192296759529131 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 807121189, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+  m_PrefabInstance: {fileID: 8242192296759529129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8242192296759529132 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1994945063, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+  m_PrefabInstance: {fileID: 8242192296759529129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8242192296759529133 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 864032008, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+  m_PrefabInstance: {fileID: 8242192296759529129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8591675759673724337
 PrefabInstance:
   m_ObjectHideFlags: 0

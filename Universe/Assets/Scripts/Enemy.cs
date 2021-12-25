@@ -8,8 +8,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] ParticleSystem explosion;
     [SerializeField] ParticleSystem explosionPlayer;
     [SerializeField] ParticleSystem hitSpark;
-    [SerializeField] ParticleSystem leftLazer;
-    [SerializeField] ParticleSystem rightLazer;
+    [SerializeField] ParticleSystem leftLazer1;
+    [SerializeField] ParticleSystem rightLazer1;
+    [SerializeField] ParticleSystem leftLazer2;
+    [SerializeField] ParticleSystem rightLazer2;
     [SerializeField] ParticleSystem e6Sparks;
     Player player;
     
@@ -39,10 +41,15 @@ public class Enemy : MonoBehaviour
                 GetComponent<Enemy>().enabled = false;
                 GetComponent<BoxCollider>().enabled = false;
                 GetComponent<Animator>().enabled = false;
-                if (leftLazer && rightLazer != null)
+                if (leftLazer1 && rightLazer1 != null)
                 {
-                    Destroy(leftLazer);
-                    Destroy(rightLazer);
+                    Destroy(leftLazer1);
+                    Destroy(rightLazer2);
+                }
+                if (leftLazer2 && rightLazer2 != null)
+                {
+                    Destroy(leftLazer2);
+                    Destroy(rightLazer2);
                 }
                 if (!explosion.isPlaying)
                 {
