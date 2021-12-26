@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
                 if (leftLazer1 && rightLazer1 != null)
                 {
                     Destroy(leftLazer1);
-                    Destroy(rightLazer2);
+                    Destroy(rightLazer1);
                 }
                 if (leftLazer2 && rightLazer2 != null)
                 {

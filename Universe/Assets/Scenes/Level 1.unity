@@ -5541,6 +5541,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1580727824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6437028471781407698, guid: 552fe1ac53d846143bb44976a867cb48, type: 3}
+  m_PrefabInstance: {fileID: 254520600425599333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1753188514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4563802948693442, guid: 4b25c99149cfef8459fd272783e1c6b5, type: 3}
@@ -11416,7 +11421,7 @@ PrefabInstance:
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: enemyShip7
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1580727824}
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: winBoostFlame
       value: 
@@ -11660,8 +11665,10 @@ MonoBehaviour:
   explosion: {fileID: 4288036940762863764}
   explosionPlayer: {fileID: 368716665}
   hitSpark: {fileID: 1753188516}
-  leftLazer: {fileID: 1554435388}
-  rightLazer: {fileID: 2135658475}
+  leftLazer1: {fileID: 1554435388}
+  rightLazer1: {fileID: 2135658475}
+  leftLazer2: {fileID: 0}
+  rightLazer2: {fileID: 0}
   e6Sparks: {fileID: 0}
 --- !u!54 &9186441649820107005
 Rigidbody:

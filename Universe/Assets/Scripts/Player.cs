@@ -20,7 +20,8 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject DeadHeart2;
     [SerializeField] GameObject DeadHeart3;
     [SerializeField] GameObject DeadHeart4;
-    [SerializeField] float controlSpeed = 75;
+    [SerializeField] float horizontalControlSpeed = 75;
+    [SerializeField] float verticalControlSpeed = 50;
     [SerializeField] float speedOfShipWhenWon = 5;
     [SerializeField] int timeToWaitUntilNextLevel = 8;
     [SerializeField] float amountToIncreaseThrusterWhenWon = 3;
@@ -100,12 +101,22 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(-.2f * Time.deltaTime * controlSpeed, 0, 0);
+            transform.Translate(-.2f * Time.deltaTime * horizontalControlSpeed, 0, 0);
         }
 
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(.2f * Time.deltaTime * controlSpeed, 0, 0);
+            transform.Translate(.2f * Time.deltaTime * horizontalControlSpeed, 0, 0);
+        }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(0, 0, .2f * Time.deltaTime * verticalControlSpeed);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(0, 0, -.2f * Time.deltaTime * verticalControlSpeed);
         }
     }
 
