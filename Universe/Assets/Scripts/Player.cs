@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] ParticleSystem leftLazer;
     [SerializeField] ParticleSystem rightLazer;
     [SerializeField] ParticleSystem explosion;
-    [SerializeField] ParticleSystem thruster;
+    [SerializeField] public ParticleSystem thruster;
     [SerializeField] ParticleSystem hitSpark;
     [SerializeField] ParticleSystem winBoostFlame;
     [SerializeField] int healthPoints = 8;
@@ -20,11 +20,11 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject DeadHeart2;
     [SerializeField] GameObject DeadHeart3;
     [SerializeField] GameObject DeadHeart4;
-    [SerializeField] float horizontalControlSpeed = 75;
-    [SerializeField] float verticalControlSpeed = 50;
+    [SerializeField] public float horizontalControlSpeed = 75;
+    [SerializeField] public float verticalControlSpeed = 50;
     [SerializeField] float speedOfShipWhenWon = 5;
     [SerializeField] int timeToWaitUntilNextLevel = 8;
-    [SerializeField] float amountToIncreaseThrusterWhenWon = 3;
+    [SerializeField] public float amountToIncreaseThrusterWhenWon = 3;
     [SerializeField] GameObject enemyShip1;
     [SerializeField] GameObject enemyShip2;
     [SerializeField] GameObject enemyShip3;

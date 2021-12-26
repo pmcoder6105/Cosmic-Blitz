@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] ParticleSystem leftLazer2;
     [SerializeField] ParticleSystem rightLazer2;
     [SerializeField] ParticleSystem e6Sparks;
+    [SerializeField] ParticleSystem e11v1Thruster, e11v2Thruster, e11v3Thruster, e11v4Thruster;
     Player player;
     
 
@@ -59,6 +60,22 @@ public class Enemy : MonoBehaviour
                 if (e6Sparks != null)
                 {
                     e6Sparks.Stop();
+                }
+                if (e11v1Thruster != null)
+                {
+                    e11v1Thruster.Stop();
+                }
+                if (e11v2Thruster != null)
+                {
+                    e11v2Thruster.Stop();
+                }
+                if (e11v3Thruster != null)
+                {
+                    e11v3Thruster.Stop();
+                }
+                if (e11v4Thruster != null)
+                {
+                    e11v4Thruster.Stop();
                 }
             }
         }
