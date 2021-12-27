@@ -124,6 +124,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
+            Debug.Log("watthehaiilyousay.ssickenwingihgoateeh");
             hitSpark.Play();
             healthPoints = healthPoints - 1;
             if (healthPoints == 7)
