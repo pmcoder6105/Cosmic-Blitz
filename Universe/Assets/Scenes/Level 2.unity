@@ -5614,7 +5614,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1760295684}
     - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+      propertyPath: leftLazer1
+      value: 
+      objectReference: {fileID: 1760295684}
+    - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
       propertyPath: rightLazer
+      value: 
+      objectReference: {fileID: 1760295683}
+    - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+      propertyPath: rightLazer1
       value: 
       objectReference: {fileID: 1760295683}
     - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
@@ -6492,7 +6500,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5876726532633540366}
     - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+      propertyPath: leftLazer1
+      value: 
+      objectReference: {fileID: 5876726532633540366}
+    - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
       propertyPath: rightLazer
+      value: 
+      objectReference: {fileID: 5876726532633540365}
+    - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+      propertyPath: rightLazer1
       value: 
       objectReference: {fileID: 5876726532633540365}
     - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
@@ -7165,9 +7181,15 @@ MonoBehaviour:
   explosion: {fileID: 4288036940762863764}
   explosionPlayer: {fileID: 368716665}
   hitSpark: {fileID: 1753188516}
-  leftLazer: {fileID: 0}
-  rightLazer: {fileID: 0}
+  leftLazer1: {fileID: 0}
+  rightLazer1: {fileID: 0}
+  leftLazer2: {fileID: 0}
+  rightLazer2: {fileID: 0}
   e6Sparks: {fileID: 896637863}
+  e11v1Thruster: {fileID: 0}
+  e11v2Thruster: {fileID: 0}
+  e11v3Thruster: {fileID: 0}
+  e11v4Thruster: {fileID: 0}
 --- !u!54 &9186441649820107005
 Rigidbody:
   m_ObjectHideFlags: 0
