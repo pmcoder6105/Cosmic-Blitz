@@ -39,19 +39,24 @@ public class Mine : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (!mineExplosion.isPlaying)
+            hitPoints = hitPoints - 1;
+            hitSpark.Play();
+            if (hitPoints == 0)
             {
-                mineExplosion.Play();
-            }
-            GetComponent<MeshRenderer>().enabled = false;
-            GetComponent<Mine>().enabled = false;
-            GetComponent<BoxCollider>().enabled = false;
-            GetComponent<Animator>().enabled = false;
-            if (!fuse.isStopped)
-            {
-                fuse.Stop();
-            }
-            Invoke(nameof(DestroyWhenDestroyed), 2f);
+                if (!mineExplosion.isPlaying)
+                {
+                    mineExplosion.Play();
+                }
+                GetComponent<MeshRenderer>().enabled = false;
+                GetComponent<Mine>().enabled = false;
+                GetComponent<BoxCollider>().enabled = false;
+                GetComponent<Animator>().enabled = false;
+                if (!fuse.isStopped)
+                {
+                    fuse.Stop();
+                }
+                Invoke(nameof(DestroyWhenDestroyed), 2f);
+            }            
         }
     }
     

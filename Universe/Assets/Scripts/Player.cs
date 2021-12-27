@@ -230,6 +230,61 @@ public class Player : MonoBehaviour
                 Heart1.GetComponent<SpriteRenderer>().enabled = false;
             }
         }
+
+        if (other.gameObject.tag == "Nuke")
+        {
+            hitSpark.Play();
+            healthPoints = healthPoints - 5;
+            if (healthPoints == 7)
+            {
+                Heart4.GetComponent<Animator>().enabled = false;
+                Heart4.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 6)
+            {
+                //Destroy(DeadHeart4);
+                //Destroy(Heart4);
+                DeadHeart4.GetComponent<SpriteRenderer>().enabled = false;
+                Heart4.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 5)
+            {
+                Heart3.GetComponent<Animator>().enabled = false;
+                Heart3.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 4)
+            {
+                //Destroy(DeadHeart3);
+                //Destroy(Heart3);
+                DeadHeart3.GetComponent<SpriteRenderer>().enabled = false;
+                Heart3.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 3)
+            {
+                Heart2.GetComponent<Animator>().enabled = false;
+                Heart2.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 2)
+            {
+                //Destroy(DeadHeart2);
+                //Destroy(Heart2);
+                DeadHeart2.GetComponent<SpriteRenderer>().enabled = false;
+                Heart2.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 1)
+            {
+                Heart1.GetComponent<Animator>().enabled = false;
+                Heart1.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            if (healthPoints == 0)
+            {
+                ParticleCrashSequence();
+                //Destroy(DeadHeart1);
+                //Destroy(Heart1);
+                DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
+                Heart1.GetComponent<SpriteRenderer>().enabled = false;
+            }
+        }
     }
 
     public void ParticleCrashSequence()
