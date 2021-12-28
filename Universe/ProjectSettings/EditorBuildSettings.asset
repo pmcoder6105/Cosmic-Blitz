@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 5.unity
     guid: 70d500046a895bf4ea01ba3467013ea2
+  - enabled: 1
+    path: Assets/Scenes/Travel to Planet.unity
+    guid: 0d578799ebc85254aa6823999267a70f
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: ba4cfbcdf67a32d40b7271d6816c4071
   m_configObjects: {}

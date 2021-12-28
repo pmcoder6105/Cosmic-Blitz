@@ -8,6 +8,7 @@ TagManager:
   - EnemyFinishPad
   - Mine
   - Nuke
+  - Planet
   layers:
   - Default
   - TransparentFX
