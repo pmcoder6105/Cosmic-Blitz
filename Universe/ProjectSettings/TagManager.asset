@@ -9,6 +9,7 @@ TagManager:
   - Mine
   - Nuke
   - Planet
+  - BossTrigger
   layers:
   - Default
   - TransparentFX
