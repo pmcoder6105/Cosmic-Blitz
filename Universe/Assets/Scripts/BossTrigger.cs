@@ -6,6 +6,7 @@ public class BossTrigger : MonoBehaviour
 {
     [SerializeField] GameObject MasterTimeline6;
     [SerializeField] GameObject Level6BossFightTimeline;
+    [SerializeField] GameObject BossTriggerObject;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,12 @@ public class BossTrigger : MonoBehaviour
         {
             MasterTimeline6.SetActive(false);
             Level6BossFightTimeline.SetActive(true);
+            Invoke(nameof(DestroyOnTrigger), 2f);
         }
+    }
+
+    void DestroyOnTrigger()
+    {
+        Destroy(BossTriggerObject);
     }
 }
