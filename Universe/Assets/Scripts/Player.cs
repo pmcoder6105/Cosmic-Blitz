@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
     [SerializeField] float speedOfShipWhenWon = 5;
     [SerializeField] int timeToWaitUntilNextLevel = 8;
     [SerializeField] public float amountToIncreaseThrusterWhenWon = 3;
+    [SerializeField] int amountToRotateOnPlayerMovement = 50;
+    [SerializeField] int amountToRotateOnPhysicalInput = 65;
     [SerializeField] GameObject enemyShip1;
     [SerializeField] GameObject enemyShip2;
     [SerializeField] GameObject enemyShip3;
@@ -99,24 +101,44 @@ public class Player : MonoBehaviour
             leftLazer.Stop();
             rightLazer.Stop();
         }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(-.2f * Time.deltaTime * horizontalControlSpeed, 0, 0);
+            transform.parent.Translate(-.2f * Time.deltaTime * horizontalControlSpeed, 0, 0);
+        }
+        
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(0, -0.5f * Time.deltaTime * amountToRotateOnPlayerMovement, 0);
         }
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(.2f * Time.deltaTime * horizontalControlSpeed, 0, 0);
+            transform.parent.Translate(.2f * Time.deltaTime * horizontalControlSpeed, 0, 0);
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(0, 0.5f * Time.deltaTime * amountToRotateOnPlayerMovement, 0);
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow)) 
+        {
+            transform.Rotate(0, -0.8f * Time.deltaTime * amountToRotateOnPhysicalInput, 0);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Rotate(0, 0.8f * Time.deltaTime * amountToRotateOnPhysicalInput, 0);
         }
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Translate(0, 0, .2f * Time.deltaTime * verticalControlSpeed);
+            transform.Translate(0, 0, 0.2f * Time.deltaTime * verticalControlSpeed);
         }
 
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Translate(0, 0, -.2f * Time.deltaTime * verticalControlSpeed);
+            transform.Translate(0, 0, -0.2f * Time.deltaTime * verticalControlSpeed);
         }
     }
 
@@ -124,7 +146,6 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Debug.Log("watthehaiilyousay.ssickenwingihgoateeh");
             hitSpark.Play();
             healthPoints = healthPoints - 1;
             if (healthPoints == 7)
