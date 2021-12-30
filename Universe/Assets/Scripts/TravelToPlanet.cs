@@ -14,7 +14,8 @@ public class TravelToPlanet : MonoBehaviour
         transform.Translate(0, 0, .2f * Time.deltaTime * verticalControlSpeed);
         if (Time.timeSinceLevelLoad > 20)
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(7);
         }
+        GetComponent<Player>().enabled = false;
     }
 }

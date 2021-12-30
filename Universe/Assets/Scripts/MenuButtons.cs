@@ -35,6 +35,6 @@ public class MenuButtons : MonoBehaviour
 
     public void PlaySixthLevelOnLevelSelect()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(6);
     }
 }
