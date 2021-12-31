@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
         Heart3.GetComponent<SpriteRenderer>().enabled = true;
         Heart2.GetComponent<SpriteRenderer>().enabled = true;
         Heart1.GetComponent<SpriteRenderer>().enabled = true;
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame
