@@ -34,6 +34,14 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject enemyShip5;
     [SerializeField] GameObject enemyShip6;
     [SerializeField] GameObject enemyShip7;
+    [SerializeField] Material Red;
+    [SerializeField] Material Blue;
+    [SerializeField] Material Green;
+    [SerializeField] Material Gray;
+    [SerializeField] Material Purple;
+    [SerializeField] Material White;
+    [SerializeField] Material Cyan;
+    [SerializeField] Material Black;
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +65,45 @@ public class Player : MonoBehaviour
         WinOnEnemyDestruction();
     }
 
+    public void TurnRed()
+    {
+        GetComponent<MeshRenderer>().material = Red;
+    }
+
+    public void TurnBlue()
+    {
+        GetComponent<MeshRenderer>().material = Blue;
+    }
+
+    public void TurnGreen()
+    {
+        GetComponent<MeshRenderer>().material = Green;
+    }
+
+    public void TurnGray()
+    {
+        GetComponent<MeshRenderer>().material = Gray;
+    }
+
+    public void TurnPurple()
+    {
+        GetComponent<MeshRenderer>().material = Purple;
+    }
+
+    public void TurnWhite()
+    {
+        GetComponent<MeshRenderer>().material = White;
+    }
+
+    public void TurnCyan()
+    {
+        GetComponent<MeshRenderer>().material = Cyan;
+    }
+
+    public void TurnBlack()
+    {
+        GetComponent<MeshRenderer>().material = Black;
+    }
     private void WinOnEnemyDestruction()
     {
         if (enemyShip1 == null &&
