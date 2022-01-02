@@ -150,7 +150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
       propertyPath: hitPoints
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
       propertyPath: controlSpeed
@@ -494,6 +494,10 @@ PrefabInstance:
     - target: {fileID: 65980332880974181, guid: 1f971c002a6e4a94983ae1d668db717c, type: 3}
       propertyPath: m_Name
       value: Enemy Ship 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038510793714340502, guid: 1f971c002a6e4a94983ae1d668db717c, type: 3}
+      propertyPath: hitPoints
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2038510793714340502, guid: 1f971c002a6e4a94983ae1d668db717c, type: 3}
       propertyPath: e11v1Thruster
@@ -1330,6 +1334,10 @@ PrefabInstance:
     - target: {fileID: 8172822010708246396, guid: 5e89c5e1375335545aaa6cf9bdc96230, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.000002433328
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720705057198305304, guid: 5e89c5e1375335545aaa6cf9bdc96230, type: 3}
+      propertyPath: hitPoints
+      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e89c5e1375335545aaa6cf9bdc96230, type: 3}
@@ -2383,6 +2391,10 @@ PrefabInstance:
     - target: {fileID: 2542330411844281273, guid: f0c7ab1c0c35c7945b8478a8cc50575a, type: 3}
       propertyPath: m_Name
       value: Mine 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149016541988317057, guid: f0c7ab1c0c35c7945b8478a8cc50575a, type: 3}
+      propertyPath: hitPoints
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7253519151509704883, guid: f0c7ab1c0c35c7945b8478a8cc50575a, type: 3}
       propertyPath: m_RootOrder
@@ -7537,6 +7549,10 @@ PrefabInstance:
       value: Enemy Ship 10
       objectReference: {fileID: 0}
     - target: {fileID: 2038510793714340502, guid: 1f971c002a6e4a94983ae1d668db717c, type: 3}
+      propertyPath: hitPoints
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038510793714340502, guid: 1f971c002a6e4a94983ae1d668db717c, type: 3}
       propertyPath: e11v1Thruster
       value: 
       objectReference: {fileID: 7997763126409758775}
@@ -8310,6 +8326,10 @@ PrefabInstance:
       value: Enemy Ship 9
       objectReference: {fileID: 0}
     - target: {fileID: 3528099304880543820, guid: 01436879b682a6e43a630f237c9dcc60, type: 3}
+      propertyPath: hitPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528099304880543820, guid: 01436879b682a6e43a630f237c9dcc60, type: 3}
       propertyPath: explosionPlayer
       value: 
       objectReference: {fileID: 368716665}
@@ -8511,7 +8531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242192296864738774, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: hitPoints
-      value: 4
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8242192296864738774, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: leftLazer1

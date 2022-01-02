@@ -287,14 +287,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.07562256, y: -0.46469998, z: -0.6101039, w: 0.6372664}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -28.076, y: -50.882, z: -73.939}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +372,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.29349086, y: -0.14406207, z: 0.04478991, w: 0.9439826}
+  m_LocalRotation: {x: 0.29349083, y: -0.14406203, z: 0.04478989, w: 0.9439826}
   m_LocalPosition: {x: 7.5, y: 11.1, z: -9.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -571,14 +571,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211790822}
-  m_LocalRotation: {x: 0.29349086, y: -0.14406207, z: 0.04478991, w: 0.9439826}
+  m_LocalRotation: {x: 0.29349083, y: -0.14406203, z: 0.04478989, w: 0.9439826}
   m_LocalPosition: {x: 7.5, y: 11.1, z: -9.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1048770051}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1314530479 stripped
 GameObject:
@@ -602,69 +602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73e92edfbfa667347b02a301591d29b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1416197782
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1416197784}
-  - component: {fileID: 1416197783}
-  m_Layer: 0
-  m_Name: Master Timeline1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!320 &1416197783
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416197782}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 3932898644644814391, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -3268251660856770563, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 3547812949606350879, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -2572121235102065535, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -389002029147894114, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -8587662935595193973, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -5594409106318383937, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &1416197784
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416197782}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894765159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1846397802687310, guid: 8c22678d7aa562145804b6f0af7e603a, type: 3}

@@ -140,6 +140,8 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
         {
+            leftLazer.Emit(1);
+            rightLazer.Emit(1);
             leftLazer.Play();
             rightLazer.Play();
         }

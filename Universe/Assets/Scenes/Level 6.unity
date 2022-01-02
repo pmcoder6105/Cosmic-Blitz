@@ -5946,6 +5946,10 @@ PrefabInstance:
       value: -0.12247145
       objectReference: {fileID: 0}
     - target: {fileID: 6820463643944223876, guid: d3c00b39053f6554f946e2b1fcf1f127, type: 3}
+      propertyPath: hitPoints
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820463643944223876, guid: d3c00b39053f6554f946e2b1fcf1f127, type: 3}
       propertyPath: e11v1Thruster
       value: 
       objectReference: {fileID: 1941812640}
@@ -6270,6 +6274,10 @@ PrefabInstance:
     - target: {fileID: 2778133533489974854, guid: 9299a39dfc57dd944a701a6916bbda08, type: 3}
       propertyPath: m_Name
       value: Enemy Ship 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2778133533489974855, guid: 9299a39dfc57dd944a701a6916bbda08, type: 3}
+      propertyPath: hitPoints
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2778133533489974855, guid: 9299a39dfc57dd944a701a6916bbda08, type: 3}
       propertyPath: m_Enabled
@@ -23524,6 +23532,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
+      propertyPath: hitPoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -25680,7 +25692,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: In this final level, you will have to defeat the enemy boss. First, get
     through the enemies you will find on the path, then you will find the boss. he
-    is no doubt the hardest enemy in this battle. He has 40 hp, he has the ability
+    is no doubt the hardest enemy in this battle. He has 100 hp, he has the ability
     to invoke enemies of his own, and he can shoot lasers. However, you've got extra
     health!
   m_isRightToLeft: 0
@@ -25839,6 +25851,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7030980007642858847, guid: 669bbe08a02ae724681f55a2b1ca11e9, type: 3}
+      propertyPath: hitPoints
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030980007642858847, guid: 669bbe08a02ae724681f55a2b1ca11e9, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -25942,6 +25958,10 @@ PrefabInstance:
     - target: {fileID: 1255753833008676908, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+      propertyPath: hitPoints
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
       propertyPath: m_Enabled
@@ -26903,6 +26923,10 @@ PrefabInstance:
     - target: {fileID: 2936693858682002987, guid: e6357d3fbfa61be41bc8c323be3ed454, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2936693858682003156, guid: e6357d3fbfa61be41bc8c323be3ed454, type: 3}
+      propertyPath: hitPoints
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2936693858682003156, guid: e6357d3fbfa61be41bc8c323be3ed454, type: 3}
       propertyPath: m_Enabled
@@ -44463,6 +44487,10 @@ PrefabInstance:
       value: Enemy Ship 10
       objectReference: {fileID: 0}
     - target: {fileID: 2038510793714340502, guid: 1f971c002a6e4a94983ae1d668db717c, type: 3}
+      propertyPath: hitPoints
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038510793714340502, guid: 1f971c002a6e4a94983ae1d668db717c, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -50410,6 +50438,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 29.559
       objectReference: {fileID: 0}
+    - target: {fileID: 2076070410, guid: f4f7657a699522546b8b1861846bd2ef, type: 3}
+      propertyPath: hitPoints
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4f7657a699522546b8b1861846bd2ef, type: 3}
 --- !u!95 &2076070409 stripped
@@ -50657,7 +50689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2100069309, guid: 315ec8f592984544584a6993bc4e07dd, type: 3}
       propertyPath: hitPoints
-      value: 7
+      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 315ec8f592984544584a6993bc4e07dd, type: 3}
@@ -50750,7 +50782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1815173143, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: hitPoints
-      value: 40
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1819534422, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: m_IsActive
@@ -55783,7 +55815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36d83e7849571147a86f3a02a8c6435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 2
+  hitPoints: 6
   explosion: {fileID: 2639861292544865579}
   explosionPlayer: {fileID: 0}
   hitSpark: {fileID: 2006019844679350602}
@@ -56188,6 +56220,10 @@ PrefabInstance:
     - target: {fileID: 6820463643944223867, guid: d3c00b39053f6554f946e2b1fcf1f127, type: 3}
       propertyPath: m_Center.z
       value: -0.20346281
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820463643944223876, guid: d3c00b39053f6554f946e2b1fcf1f127, type: 3}
+      propertyPath: hitPoints
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6820463643944223876, guid: d3c00b39053f6554f946e2b1fcf1f127, type: 3}
       propertyPath: e11v1Thruster

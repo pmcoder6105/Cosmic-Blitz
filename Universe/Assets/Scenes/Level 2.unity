@@ -11770,6 +11770,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+      propertyPath: hitPoints
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
       propertyPath: leftLazer
       value: 
       objectReference: {fileID: 1760295684}
@@ -12273,6 +12277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mine 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3149016541988317057, guid: f0c7ab1c0c35c7945b8478a8cc50575a, type: 3}
+      propertyPath: hitPoints
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 7253519151509704883, guid: f0c7ab1c0c35c7945b8478a8cc50575a, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -12406,6 +12414,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 10722786534830283}
     - target: {fileID: 6734819392294793694, guid: 3eda29ea85dba634b8bd87b0826b94c5, type: 3}
+      propertyPath: hitPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6734819392294793694, guid: 3eda29ea85dba634b8bd87b0826b94c5, type: 3}
       propertyPath: explosionPlayer
       value: 
       objectReference: {fileID: 368716665}
@@ -12488,6 +12500,10 @@ PrefabInstance:
     - target: {fileID: 2236718130811179330, guid: f037d2c098f23fc49953204c655e2d75, type: 3}
       propertyPath: m_Name
       value: Enemy Ship 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236718130811179331, guid: f037d2c098f23fc49953204c655e2d75, type: 3}
+      propertyPath: hitPoints
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2236718130811179331, guid: f037d2c098f23fc49953204c655e2d75, type: 3}
       propertyPath: explosionPlayer
@@ -13000,6 +13016,10 @@ PrefabInstance:
     - target: {fileID: 2349397800259768125, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
+      propertyPath: hitPoints
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5441979854070197489, guid: eeb80a0f1d4778c4f9b35e6e87552fd7, type: 3}
       propertyPath: leftLazer
@@ -13696,6 +13716,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.00004090734
       objectReference: {fileID: 0}
+    - target: {fileID: 8720705057198305304, guid: 5e89c5e1375335545aaa6cf9bdc96230, type: 3}
+      propertyPath: hitPoints
+      value: 21
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e89c5e1375335545aaa6cf9bdc96230, type: 3}
 --- !u!95 &8720705057198305302 stripped
@@ -13728,7 +13752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36d83e7849571147a86f3a02a8c6435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 2
+  hitPoints: 6
   explosion: {fileID: 4288036940762863764}
   explosionPlayer: {fileID: 368716665}
   hitSpark: {fileID: 1753188516}

@@ -162,7 +162,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e1cac9f87fda27445ac6a54ade344d63, type: 2}
     - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
       propertyPath: hitPoints
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
       propertyPath: controlSpeed
@@ -7024,6 +7024,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7244619282869115939, guid: 5277699b0f787b2418bf27e3f26a3c4b, type: 3}
+      propertyPath: hitPoints
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7244619282869115939, guid: 5277699b0f787b2418bf27e3f26a3c4b, type: 3}
       propertyPath: explosionPlayer
       value: 
       objectReference: {fileID: 368716665}
@@ -7120,6 +7124,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d58bf68b17f9a4240aaeb5c200c9a12c, type: 2}
+    - target: {fileID: 6360211601168109196, guid: a78fd373dd16173428558dda7c4a6db9, type: 3}
+      propertyPath: hitPoints
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6360211601168109196, guid: a78fd373dd16173428558dda7c4a6db9, type: 3}
       propertyPath: explosionPlayer
       value: 
@@ -26490,7 +26498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36d83e7849571147a86f3a02a8c6435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 4
+  hitPoints: 12
   explosion: {fileID: 464042789}
   explosionPlayer: {fileID: 368716665}
   hitSpark: {fileID: 382648378}
@@ -27399,7 +27407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36d83e7849571147a86f3a02a8c6435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 4
+  hitPoints: 12
   explosion: {fileID: 1601347616324598477}
   explosionPlayer: {fileID: 368716665}
   hitSpark: {fileID: 1601347616324598476}
@@ -27658,7 +27666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3caae39ec7c92245ad89ee684414792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 8
+  hitPoints: 24
   mineExplosion: {fileID: 4313632375612453166}
   hitSpark: {fileID: 4313632375612453165}
   fuse: {fileID: 4313632375612453164}
@@ -28269,6 +28277,10 @@ PrefabInstance:
     - target: {fileID: 2940350633801327404, guid: 5277699b0f787b2418bf27e3f26a3c4b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7244619282869115939, guid: 5277699b0f787b2418bf27e3f26a3c4b, type: 3}
+      propertyPath: hitPoints
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7244619282869115939, guid: 5277699b0f787b2418bf27e3f26a3c4b, type: 3}
       propertyPath: explosionPlayer

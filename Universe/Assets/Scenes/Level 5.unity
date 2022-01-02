@@ -772,6 +772,10 @@ PrefabInstance:
       value: -0.000000009418528
       objectReference: {fileID: 0}
     - target: {fileID: 6820463643944223876, guid: d3c00b39053f6554f946e2b1fcf1f127, type: 3}
+      propertyPath: hitPoints
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820463643944223876, guid: d3c00b39053f6554f946e2b1fcf1f127, type: 3}
       propertyPath: e11v1Thruster
       value: 
       objectReference: {fileID: 1941812640}
@@ -866,7 +870,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Alright. As you get closer to the enemy planet, you will find that the
-    enemies get stronger and bigger. Those two big enemies are each 25 hits. Don't
+    enemies get stronger and bigger. Those two big enemies are each 50 hits. Don't
     waste any time.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a71bed34e3373bc4d817702c2306c735, type: 2}
@@ -7470,7 +7474,7 @@ PrefabInstance:
       objectReference: {fileID: -3907833751807807751, guid: 935092da8210ce844895c8a67045f830, type: 3}
     - target: {fileID: 2936693858682003156, guid: e6357d3fbfa61be41bc8c323be3ed454, type: 3}
       propertyPath: hitPoints
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2936693858682003156, guid: e6357d3fbfa61be41bc8c323be3ed454, type: 3}
       propertyPath: e11v1Thruster
@@ -7651,6 +7655,10 @@ PrefabInstance:
       value: -0.0000001605146
       objectReference: {fileID: 0}
     - target: {fileID: 6820463643944223876, guid: d3c00b39053f6554f946e2b1fcf1f127, type: 3}
+      propertyPath: hitPoints
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820463643944223876, guid: d3c00b39053f6554f946e2b1fcf1f127, type: 3}
       propertyPath: e11v1Thruster
       value: 
       objectReference: {fileID: 217822139}
@@ -7751,7 +7759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2778133533489974855, guid: 9299a39dfc57dd944a701a6916bbda08, type: 3}
       propertyPath: hitPoints
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2778133533489974855, guid: 9299a39dfc57dd944a701a6916bbda08, type: 3}
       propertyPath: e11v1Thruster
