@@ -137,7 +137,7 @@ public class Player : MonoBehaviour
     }
     
     void ProcessShip()
-    {
+    {   
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             leftLazer.Emit(1);
