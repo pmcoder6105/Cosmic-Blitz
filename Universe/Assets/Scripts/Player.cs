@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
     [SerializeField] Material Black;
     [SerializeField] GameObject boundary;
     [SerializeField] AudioClip lazer;
+    [SerializeField] AudioClip damage;
     AudioSource audioSource;
 
     // Start is called before the first frame update
@@ -202,8 +203,9 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
+            audioSource.PlayOneShot(damage);
             hitSpark.Play();
-            healthPoints = healthPoints - 1;
+            healthPoints = healthPoints - 1;            
             if (healthPoints == 7)
             {
                 Heart4.GetComponent<Animator>().enabled = false;
@@ -256,6 +258,7 @@ public class Player : MonoBehaviour
         }
         if (other.gameObject.tag == "Mine")
         {
+            audioSource.PlayOneShot(damage);
             hitSpark.Play();
             healthPoints = healthPoints - 3;
             if (healthPoints == 7)
@@ -311,6 +314,7 @@ public class Player : MonoBehaviour
 
         if (other.gameObject.tag == "Nuke")
         {
+            audioSource.PlayOneShot(damage);
             hitSpark.Play();
             healthPoints = healthPoints - 5;
             if (healthPoints == 7)
@@ -383,6 +387,7 @@ public class Player : MonoBehaviour
     {        
         if (other.gameObject.tag == "Enemy")
         {
+            audioSource.PlayOneShot(damage);
             hitSpark.Play();
             healthPoints = healthPoints - 1;
             if (healthPoints == 7)
