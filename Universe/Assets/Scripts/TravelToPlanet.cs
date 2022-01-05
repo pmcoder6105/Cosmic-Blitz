@@ -6,7 +6,7 @@ public class TravelToPlanet : MonoBehaviour
     float verticalControlSpeed = 50;
     private void Start()
     {
-        
+        Time.timeScale = 0;
     }
 
     private void Update()

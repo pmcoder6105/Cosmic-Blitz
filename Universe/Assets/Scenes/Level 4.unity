@@ -6894,7 +6894,7 @@ GameObject:
   - component: {fileID: 410333264}
   - component: {fileID: 410333263}
   - component: {fileID: 410333262}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: EnemyFinishPad
   m_TagString: EnemyFinishPad
   m_Icon: {fileID: 0}
