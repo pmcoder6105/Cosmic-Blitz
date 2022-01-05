@@ -45,7 +45,6 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject boundary;
     [SerializeField] AudioClip lazer;
     [SerializeField] AudioClip damage;
-    [SerializeField] AudioClip destruction;
     AudioSource audioSource;
 
     // Start is called before the first frame update
@@ -250,7 +249,6 @@ public class Player : MonoBehaviour
             }
             if (healthPoints == 0)
             {
-                audioSource.PlayOneShot(destruction);
                 ParticleCrashSequence();
                 //Destroy(DeadHeart1);
                 //Destroy(Heart1);
@@ -306,7 +304,6 @@ public class Player : MonoBehaviour
             }
             if (healthPoints == 0)
             {
-                audioSource.PlayOneShot(destruction);
                 ParticleCrashSequence();
                 //Destroy(DeadHeart1);
                 //Destroy(Heart1);
@@ -363,7 +360,6 @@ public class Player : MonoBehaviour
             }
             if (healthPoints == 0)
             {
-                audioSource.PlayOneShot(destruction);
                 ParticleCrashSequence();
                 //Destroy(DeadHeart1);
                 //Destroy(Heart1);
@@ -385,7 +381,6 @@ public class Player : MonoBehaviour
         }
         leftLazer.Stop();
         rightLazer.Stop();
-        audioSource.PlayOneShot(destruction);
     }
 
     void OnParticleCollision(GameObject other)
@@ -438,7 +433,6 @@ public class Player : MonoBehaviour
             }
             if (healthPoints == 0)
             {
-                audioSource.PlayOneShot(destruction);
                 CollisionCrashSequence();
                 //Destroy(DeadHeart1);
                 //Destroy(Heart1);
@@ -460,7 +454,6 @@ public class Player : MonoBehaviour
         }
         leftLazer.Stop();
         rightLazer.Stop();
-        audioSource.PlayOneShot(destruction);
     }
 
     public void LoadCurrentScene()
