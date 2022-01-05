@@ -6546,7 +6546,7 @@ GameObject:
   - component: {fileID: 228261419}
   - component: {fileID: 228261418}
   - component: {fileID: 228261417}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Boss Trigger
   m_TagString: BossTrigger
   m_Icon: {fileID: 0}
@@ -56536,6 +56536,14 @@ PrefabInstance:
     - target: {fileID: 7660452177237939208, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.136
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452177237939210, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452177705772768, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 7660452177705772774, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: m_LocalPosition.x

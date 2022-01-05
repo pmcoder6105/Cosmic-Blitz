@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
     [SerializeField] Material White;
     [SerializeField] Material Cyan;
     [SerializeField] Material Black;
+    [SerializeField] GameObject boundary;
 
     // Start is called before the first frame update
     void Start()
@@ -121,6 +122,7 @@ public class Player : MonoBehaviour
                 winBoostFlame.Play();
             }
             thruster.GetComponent<ParticleSystem>().startSize = amountToIncreaseThrusterWhenWon;
+            Destroy(boundary);
         }
     }
     

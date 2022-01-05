@@ -8920,6 +8920,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: d215bd3bb42e9764da6cb4f2e19fe1fc, type: 2}
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: boundary
+      value: 
+      objectReference: {fileID: 1351166328}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: DeadHeart1
       value: 
       objectReference: {fileID: 7885581873856388553}
@@ -9135,17 +9139,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 807121189, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 53
+      objectReference: {fileID: 0}
     - target: {fileID: 864032005, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 864032008, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 996585301, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 996585304, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 53
+      objectReference: {fileID: 0}
     - target: {fileID: 1994945060, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994945063, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 1120773863756639338, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: m_Materials.Array.data[0]

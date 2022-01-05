@@ -9808,7 +9808,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 53
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -16792,7 +16792,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 53
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -18844,6 +18844,10 @@ PrefabInstance:
       propertyPath: Purple
       value: 
       objectReference: {fileID: 2100000, guid: d215bd3bb42e9764da6cb4f2e19fe1fc, type: 2}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: boundary
+      value: 
+      objectReference: {fileID: 2133983211}
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: DeadHeart1
       value: 

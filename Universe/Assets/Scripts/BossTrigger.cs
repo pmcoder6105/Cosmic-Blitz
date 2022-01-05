@@ -26,12 +26,7 @@ public class BossTrigger : MonoBehaviour
         {
             MasterTimeline6.SetActive(false);
             Level6BossFightTimeline.SetActive(true);
-            Invoke(nameof(DestroyOnTrigger), 2f);
+            Destroy(BossTriggerObject);
         }
-    }
-
-    void DestroyOnTrigger()
-    {
-        Destroy(BossTriggerObject);
     }
 }
