@@ -3284,8 +3284,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I should'nt tell you this, but be careful of the top middle enemy. Take
-    care of it before it destroys you. Good luck!
+  m_text: Some enemies have more than two lasers! The ship directly in front of you
+    has four! Take care of it before it destroys you. Don't let them into your home
+    planet!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a71bed34e3373bc4d817702c2306c735, type: 2}
   m_sharedMaterial: {fileID: -7309552353430680560, guid: a71bed34e3373bc4d817702c2306c735, type: 2}

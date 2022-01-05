@@ -3847,7 +3847,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Defeat all 7 enemies to win! Be careful. Some of them have lasers! You
-    have 8 hp, which means you can take 8 hits before you die! GOod luck!
+    have 8 hp, which means you can take 8 hits before you die! Also, make sure to
+    not let the enemies below you, as they will enter your home planet! Good luck!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a71bed34e3373bc4d817702c2306c735, type: 2}
   m_sharedMaterial: {fileID: -7309552353430680560, guid: a71bed34e3373bc4d817702c2306c735, type: 2}
@@ -3874,8 +3875,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
