@@ -43,6 +43,8 @@ public class Player : MonoBehaviour
     [SerializeField] Material Cyan;
     [SerializeField] Material Black;
     [SerializeField] GameObject boundary;
+    [SerializeField] AudioClip lazer;
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +57,7 @@ public class Player : MonoBehaviour
         Heart3.GetComponent<SpriteRenderer>().enabled = true;
         Heart2.GetComponent<SpriteRenderer>().enabled = true;
         Heart1.GetComponent<SpriteRenderer>().enabled = true;
+        audioSource = GetComponent<AudioSource>();
         Time.timeScale = 0;
     }
 
@@ -146,6 +149,7 @@ public class Player : MonoBehaviour
             rightLazer.Emit(1);
             leftLazer.Play();
             rightLazer.Play();
+            audioSource.PlayOneShot(lazer);
         }
 
         if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.Mouse0))
