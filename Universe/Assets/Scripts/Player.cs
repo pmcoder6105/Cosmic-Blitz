@@ -11,7 +11,8 @@ public class Player : MonoBehaviour
     [SerializeField] public ParticleSystem thruster;
     [SerializeField] ParticleSystem hitSpark;
     [SerializeField] ParticleSystem winBoostFlame;
-    [SerializeField] int healthPoints = 8;
+
+    
     [SerializeField] GameObject Heart1;
     [SerializeField] GameObject Heart2;
     [SerializeField] GameObject Heart3;
@@ -20,13 +21,6 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject DeadHeart2;
     [SerializeField] GameObject DeadHeart3;
     [SerializeField] GameObject DeadHeart4;
-    [SerializeField] public float horizontalControlSpeed = 75;
-    [SerializeField] public float verticalControlSpeed = 50;
-    [SerializeField] float speedOfShipWhenWon = 5;
-    [SerializeField] int timeToWaitUntilNextLevel = 8;
-    [SerializeField] public float amountToIncreaseThrusterWhenWon = 3;
-    [SerializeField] int amountToRotateOnPlayerMovement = 50;
-    [SerializeField] int amountToRotateOnPhysicalInput = 65;
     [SerializeField] GameObject enemyShip1;
     [SerializeField] GameObject enemyShip2;
     [SerializeField] GameObject enemyShip3;
@@ -34,6 +28,19 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject enemyShip5;
     [SerializeField] GameObject enemyShip6;
     [SerializeField] GameObject enemyShip7;
+    [SerializeField] GameObject boundary;
+
+
+    [SerializeField] int healthPoints = 8;
+    [SerializeField] public float horizontalControlSpeed = 75;
+    [SerializeField] public float verticalControlSpeed = 50;
+    [SerializeField] float speedOfShipWhenWon = 5;
+    [SerializeField] int timeToWaitUntilNextLevel = 8;
+    [SerializeField] public float amountToIncreaseThrusterWhenWon = 3;
+    [SerializeField] int amountToRotateOnPlayerMovement = 50;
+    [SerializeField] int amountToRotateOnPhysicalInput = 65;
+
+
     [SerializeField] Material Red;
     [SerializeField] Material Blue;
     [SerializeField] Material Green;
@@ -42,11 +49,15 @@ public class Player : MonoBehaviour
     [SerializeField] Material White;
     [SerializeField] Material Cyan;
     [SerializeField] Material Black;
-    [SerializeField] GameObject boundary;
+
+
+    AudioSource audioSource;
+    Rigidbody rigidBody;
+
+
     [SerializeField] AudioClip lazer;
     [SerializeField] AudioClip damage;
     [SerializeField] AudioClip win;
-    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -74,8 +85,8 @@ public class Player : MonoBehaviour
 
     void MakeSureCollisionDoesntAffectPlayerPosition()
     {
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
-        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        rigidBody.velocity = Vector3.zero;
+        rigidBody.angularVelocity = Vector3.zero;
     }
 
     public void TurnRed()

@@ -2406,7 +2406,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Great. You've passed 5 waves of enemy ships. Now, you have to travel to
-    the enemy home planet to confront the enemy boss. Good luck, and be careful.
+    the enemy home planet to confront the enemy boss. Relax, as autopilot will handle
+    this journey to the planet for you. Good luck, and be careful.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a71bed34e3373bc4d817702c2306c735, type: 2}
   m_sharedMaterial: {fileID: -7309552353430680560, guid: a71bed34e3373bc4d817702c2306c735, type: 2}
@@ -2433,8 +2434,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 9
+  m_fontSizeBase: 9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

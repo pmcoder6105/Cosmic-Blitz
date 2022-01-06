@@ -8,17 +8,6 @@ public class BossTrigger : MonoBehaviour
     [SerializeField] GameObject Level6BossFightTimeline;
     [SerializeField] GameObject BossTriggerObject;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnCollisionEnter(Collision other)
     {
