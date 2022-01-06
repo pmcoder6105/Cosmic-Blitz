@@ -69,6 +69,13 @@ public class Player : MonoBehaviour
         ProcessShip();
         DebugKeys();
         WinOnEnemyDestruction();
+        MakeSureCollisionDoesntAffectPlayerPosition();
+    }
+
+    void MakeSureCollisionDoesntAffectPlayerPosition()
+    {
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
     }
 
     public void TurnRed()
@@ -110,7 +117,7 @@ public class Player : MonoBehaviour
     {
         GetComponent<MeshRenderer>().material = Black;
     }
-    private void WinOnEnemyDestruction()
+    void WinOnEnemyDestruction()
     {
         if (enemyShip1 == null &&
                     enemyShip2 == null &&
@@ -377,7 +384,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void ParticleCrashSequence()
+    void ParticleCrashSequence()
     {
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Player>().enabled = false;
@@ -450,7 +457,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void CollisionCrashSequence()
+    void CollisionCrashSequence()
     {
         GetComponent<Player>().enabled = false;
         Invoke(nameof(LoadCurrentScene), 2f);

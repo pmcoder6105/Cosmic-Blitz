@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     }
 
 
-    public void OnParticleCollision(GameObject other)
+    void OnParticleCollision(GameObject other)
     {
         if (other.gameObject.tag == "Player")
         {
@@ -87,7 +87,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "EnemyFinishPad")
         {                        

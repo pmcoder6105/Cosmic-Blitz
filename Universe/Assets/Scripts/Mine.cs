@@ -11,7 +11,7 @@ public class Mine : MonoBehaviour
     AudioSource aS;
     [SerializeField] AudioClip destruction;
 
-    private void Start()
+    void Start()
     {
         aS = GetComponent<AudioSource>();
     }

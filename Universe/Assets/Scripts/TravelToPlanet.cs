@@ -4,12 +4,12 @@ using UnityEngine;
 public class TravelToPlanet : MonoBehaviour
 {
     float verticalControlSpeed = 50;
-    private void Start()
+    void Start()
     {
         Time.timeScale = 0;
     }
 
-    private void Update()
+    void Update()
     {
         transform.Translate(0, 0, .2f * Time.deltaTime * verticalControlSpeed);
         if (Time.timeSinceLevelLoad > 20)
