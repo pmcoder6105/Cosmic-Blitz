@@ -8,7 +8,13 @@ public class Mine : MonoBehaviour
     [SerializeField] ParticleSystem mineExplosion;
     [SerializeField] ParticleSystem hitSpark;
     [SerializeField] ParticleSystem fuse;
+    AudioSource aS;
+    [SerializeField] AudioClip destruction;
 
+    private void Start()
+    {
+        aS = GetComponent<AudioSource>();
+    }
 
     void OnParticleCollision(GameObject other)
     {
@@ -18,6 +24,10 @@ public class Mine : MonoBehaviour
             hitSpark.Play();            
             if (hitPoints == 0)
             {
+                if (!aS.isPlaying)
+                {
+                    aS.PlayOneShot(destruction);
+                }
                 GetComponent<MeshRenderer>().enabled = false;
                 GetComponent<Mine>().enabled = false;
                 GetComponent<BoxCollider>().enabled = false;

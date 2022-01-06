@@ -15,12 +15,14 @@ public class Enemy : MonoBehaviour
     [SerializeField] ParticleSystem e6Sparks;
     [SerializeField] ParticleSystem e11v1Thruster, e11v2Thruster, e11v3Thruster, e11v4Thruster;
     Player player;
-    
+    AudioSource aS;
+    [SerializeField] AudioClip destruction;
 
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<Player>();
+        aS = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,6 +40,10 @@ public class Enemy : MonoBehaviour
             hitSpark.Play();            
             if (hitPoints == 0)
             {
+                if (!aS.isPlaying)
+                {
+                    aS.PlayOneShot(destruction);
+                }
                 GetComponent<MeshRenderer>().enabled = false;
                 GetComponent<Enemy>().enabled = false;
                 GetComponent<BoxCollider>().enabled = false;

@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject boundary;
     [SerializeField] AudioClip lazer;
     [SerializeField] AudioClip damage;
+    [SerializeField] AudioClip win;
     AudioSource audioSource;
 
     // Start is called before the first frame update
@@ -126,7 +127,14 @@ public class Player : MonoBehaviour
                 winBoostFlame.Play();
             }
             thruster.GetComponent<ParticleSystem>().startSize = amountToIncreaseThrusterWhenWon;
-            Destroy(boundary);
+            if (boundary != null)
+            {
+                Destroy(boundary);
+            }                       
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(win);
+            }
         }
     }
     
