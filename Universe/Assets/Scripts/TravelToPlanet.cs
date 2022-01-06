@@ -7,6 +7,7 @@ public class TravelToPlanet : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
+        GetComponent<Player>().enabled = false;
     }
 
     void Update()
@@ -16,6 +17,5 @@ public class TravelToPlanet : MonoBehaviour
         {
             SceneManager.LoadScene(7);
         }
-        GetComponent<Player>().enabled = false;
     }
 }
