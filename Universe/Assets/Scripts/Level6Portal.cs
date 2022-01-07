@@ -6,6 +6,7 @@ public class Level6Portal : MonoBehaviour
 {
     Player player;
     [SerializeField] GameObject finishLevel6Text;
+    [SerializeField] GameObject finishLevel6Timeline;
     
     // Start is called before the first frame update
     void Start()
@@ -22,11 +23,17 @@ public class Level6Portal : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().enabled = true;
             GetComponent<BoxCollider>().enabled = true;
-            finishLevel6Text.active = true;
+            finishLevel6Text.SetActive(true); 
         }
     }
 
     private void OnCollisionEnter(Collision collision)
+    {
+        Invoke(nameof(LoadFinishScene), 3f);
+        finishLevel6Timeline.SetActive(true);
+    }
+
+    void LoadFinishScene()
     {
         SceneManager.LoadScene(8);
     }
