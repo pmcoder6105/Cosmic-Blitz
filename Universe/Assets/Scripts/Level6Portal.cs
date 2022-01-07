@@ -23,11 +23,13 @@ public class Level6Portal : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().enabled = true;
             GetComponent<BoxCollider>().enabled = true;
-            finishLevel6Text.SetActive(true); 
+            finishLevel6Text.SetActive(true);
+            Invoke(nameof(TurnOffColliderWhenWarping), 0.5f);
+            Invoke(nameof(DestroyPlayerWhenTimeRunsOut), 20);
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         Invoke(nameof(LoadFinishScene), 3f);
         finishLevel6Timeline.SetActive(true);
@@ -36,5 +38,15 @@ public class Level6Portal : MonoBehaviour
     void LoadFinishScene()
     {
         SceneManager.LoadScene(8);
+    }
+
+    void TurnOffColliderWhenWarping()
+    {
+        GetComponent<BoxCollider>().enabled = false;
+    }
+
+    void DestroyPlayerWhenTimeRunsOut()
+    {
+        player.ParticleCrashSequence();
     }
 }

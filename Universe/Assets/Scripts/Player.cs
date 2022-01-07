@@ -395,7 +395,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void ParticleCrashSequence()
+    public void ParticleCrashSequence()
     {
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Player>().enabled = false;
