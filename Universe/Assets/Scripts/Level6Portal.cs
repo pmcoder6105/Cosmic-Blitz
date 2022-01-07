@@ -5,9 +5,9 @@ using UnityEngine;
 public class Level6Portal : MonoBehaviour
 {
     Player player;
-    [SerializeField] GameObject finishLevel6Text;
     [SerializeField] GameObject finishLevel6Timeline;
-    
+    [SerializeField] GameObject finishText1, finishText2;
+     
     // Start is called before the first frame update
     void Start()
     {
@@ -19,14 +19,7 @@ public class Level6Portal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.enemyShip1 == null)
-        {
-            GetComponent<SpriteRenderer>().enabled = true;
-            GetComponent<BoxCollider>().enabled = true;
-            finishLevel6Text.SetActive(true);
-            Invoke(nameof(TurnOffColliderWhenWarping), 0.5f);
-            Invoke(nameof(DestroyPlayerWhenTimeRunsOut), 20);
-        }
+        SeeIfWarpPortalIsActive();
     }
 
     void OnCollisionEnter(Collision collision)
@@ -48,5 +41,18 @@ public class Level6Portal : MonoBehaviour
     void DestroyPlayerWhenTimeRunsOut()
     {
         player.ParticleCrashSequence();
+    }
+
+    void SeeIfWarpPortalIsActive()
+    {
+        if (player.enemyShip1 == null)
+        {
+            GetComponent<SpriteRenderer>().enabled = true;
+            GetComponent<BoxCollider>().enabled = true;
+            Invoke(nameof(TurnOffColliderWhenWarping), 0.5f);
+            Invoke(nameof(DestroyPlayerWhenTimeRunsOut), 30);
+            finishText1.SetActive(true);
+            finishText2.SetActive(true);
+        }
     }
 }

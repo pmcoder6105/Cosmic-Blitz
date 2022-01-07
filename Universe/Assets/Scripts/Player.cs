@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     [SerializeField] public float amountToIncreaseThrusterWhenWon = 3;
     [SerializeField] int amountToRotateOnPlayerMovement = 50;
     [SerializeField] int amountToRotateOnPhysicalInput = 65;
+    int amountToEmitLazer = 1;
 
 
     [SerializeField] Material Red;
@@ -166,14 +167,22 @@ public class Player : MonoBehaviour
         {
             LoadNextScene();
         }
+        if (Input.GetKey(KeyCode.Alpha6))
+        {
+            transform.position = new Vector3(-81.38f, 145.74f, 19);
+        }
+        if (Input.GetKey(KeyCode.Alpha7))
+        {
+            amountToEmitLazer = 10;
+        }
     }
     
     void ProcessShip()
     {   
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
         {
-            leftLazer.Emit(1);
-            rightLazer.Emit(1);
+            leftLazer.Emit(amountToEmitLazer);
+            rightLazer.Emit(amountToEmitLazer);
             leftLazer.Play();
             rightLazer.Play();
             audioSource.PlayOneShot(lazer);
