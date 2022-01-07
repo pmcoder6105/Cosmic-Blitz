@@ -10,6 +10,7 @@ TagManager:
   - Nuke
   - Planet
   - BossTrigger
+  - Portal
   layers:
   - Default
   - TransparentFX

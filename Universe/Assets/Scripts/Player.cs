@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject DeadHeart2;
     [SerializeField] GameObject DeadHeart3;
     [SerializeField] GameObject DeadHeart4;
-    [SerializeField] GameObject enemyShip1;
+    [SerializeField] public GameObject enemyShip1;
     [SerializeField] GameObject enemyShip2;
     [SerializeField] GameObject enemyShip3;
     [SerializeField] GameObject enemyShip4;
