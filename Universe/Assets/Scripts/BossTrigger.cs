@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BossTrigger : MonoBehaviour
 {
-    [SerializeField] GameObject MasterTimeline6;
     [SerializeField] GameObject Level6BossFightTimeline;
     [SerializeField] GameObject BossTriggerObject;
 
@@ -13,7 +12,6 @@ public class BossTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "BossTrigger")
         {
-            MasterTimeline6.SetActive(false);
             Level6BossFightTimeline.SetActive(true);
             Destroy(BossTriggerObject);
         }
