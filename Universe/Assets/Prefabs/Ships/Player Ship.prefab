@@ -9786,6 +9786,7 @@ MonoBehaviour:
   lazer: {fileID: 0}
   damage: {fileID: 0}
   win: {fileID: 0}
+  destruct: {fileID: 8300000, guid: f01c623f724825e44a923d1ae50256f2, type: 3}
 --- !u!82 &7411119407090408601
 AudioSource:
   m_ObjectHideFlags: 0

@@ -6634,6 +6634,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!198 &143817282 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 368703981, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+  m_PrefabInstance: {fileID: 2140889042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &147931553 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6658142460768274812, guid: d3c00b39053f6554f946e2b1fcf1f127, type: 3}
@@ -12245,6 +12250,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275671246}
   m_CullTransparentMesh: 1
+--- !u!198 &276666784 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1819534425, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+  m_PrefabInstance: {fileID: 2140889042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &300250286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22936,6 +22946,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476342577}
   m_CullTransparentMesh: 1
+--- !u!198 &482959219 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 415600664, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+  m_PrefabInstance: {fileID: 2140889042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &484602095
 GameObject:
   m_ObjectHideFlags: 0
@@ -35472,7 +35487,7 @@ GameObject:
   - component: {fileID: 872114695}
   m_Layer: 0
   m_Name: Portal
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36195,7 +36210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914709905}
   m_LocalRotation: {x: 0.12017542, y: 0.009195071, z: -0.0011131368, w: 0.99270946}
-  m_LocalPosition: {x: -0.99629855, y: 1.292741, z: -14.833057}
+  m_LocalPosition: {x: -83.64629, y: 216.26909, z: -16.089598}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36618,7 +36633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.12017542, y: 0.009195071, z: -0.0011131368, w: 0.99270946}
-  m_LocalPosition: {x: -0.99629855, y: 1.292741, z: -14.833057}
+  m_LocalPosition: {x: -83.64629, y: 216.26909, z: -16.089598}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36805,6 +36820,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964528714}
   m_CullTransparentMesh: 1
+--- !u!198 &974084250 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 333936070, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+  m_PrefabInstance: {fileID: 2140889042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &996344866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69983,9 +70003,25 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1815173143, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+      propertyPath: leftLazer1
+      value: 
+      objectReference: {fileID: 482959219}
+    - target: {fileID: 1815173143, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+      propertyPath: leftLazer2
+      value: 
+      objectReference: {fileID: 974084250}
+    - target: {fileID: 1815173143, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: destruction
       value: 
       objectReference: {fileID: 8300000, guid: f01c623f724825e44a923d1ae50256f2, type: 3}
+    - target: {fileID: 1815173143, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+      propertyPath: rightLazer1
+      value: 
+      objectReference: {fileID: 276666784}
+    - target: {fileID: 1815173143, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+      propertyPath: rightLazer2
+      value: 
+      objectReference: {fileID: 143817282}
     - target: {fileID: 1819534422, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -81288,6 +81324,10 @@ PrefabInstance:
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: timeToWaitUntilNextLevel
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: amountToTranslateWhenWarping
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: amountToRotateOnPhysicalInput

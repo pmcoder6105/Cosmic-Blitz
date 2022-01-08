@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
     [SerializeField] int amountToRotateOnPlayerMovement = 50;
     [SerializeField] int amountToRotateOnPhysicalInput = 65;
     int amountToEmitLazer = 1;
+    [SerializeField] float amountToTranslateWhenWarping = 0.5f;
 
 
     [SerializeField] Material Red;
@@ -59,6 +60,7 @@ public class Player : MonoBehaviour
     [SerializeField] AudioClip lazer;
     [SerializeField] AudioClip damage;
     [SerializeField] AudioClip win;
+    [SerializeField] AudioClip destruct;
 
     // Start is called before the first frame update
     void Start()
@@ -174,7 +176,8 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Alpha7))
         {
-            amountToEmitLazer = 10;
+            transform.position = new Vector3(-80.04688f, 193.9698f, 19);
+            Destroy(enemyShip1);
         }
     }
     
@@ -290,6 +293,7 @@ public class Player : MonoBehaviour
                 //Destroy(Heart1);
                 DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
                 Heart1.GetComponent<SpriteRenderer>().enabled = false;
+                audioSource.PlayOneShot(destruct);
             }
         }
         if (other.gameObject.tag == "Mine")
@@ -345,6 +349,7 @@ public class Player : MonoBehaviour
                 //Destroy(Heart1);
                 DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
                 Heart1.GetComponent<SpriteRenderer>().enabled = false;
+                audioSource.PlayOneShot(destruct);
             }
         }
 
@@ -400,7 +405,8 @@ public class Player : MonoBehaviour
                 //Destroy(DeadHeart1);
                 //Destroy(Heart1);
                 DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
-                Heart1.GetComponent<SpriteRenderer>().enabled = false;                
+                Heart1.GetComponent<SpriteRenderer>().enabled = false;
+                audioSource.PlayOneShot(destruct);
             }
         }
     }
@@ -474,6 +480,7 @@ public class Player : MonoBehaviour
                 //Destroy(Heart1);
                 DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
                 Heart1.GetComponent<SpriteRenderer>().enabled = false;
+                audioSource.PlayOneShot(destruct);
             }
         }
     }
@@ -520,5 +527,6 @@ public class Player : MonoBehaviour
         Destroy(DeadHeart3);
         Destroy(DeadHeart4);
         thruster.Stop();
+        audioSource.PlayOneShot(destruct);
     }
 }
