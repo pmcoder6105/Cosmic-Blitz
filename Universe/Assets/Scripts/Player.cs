@@ -71,6 +71,7 @@ public class Player : MonoBehaviour
         Heart3.GetComponent<SpriteRenderer>().enabled = true;
         Heart2.GetComponent<SpriteRenderer>().enabled = true;
         Heart1.GetComponent<SpriteRenderer>().enabled = true;
+        rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
         Time.timeScale = 0;
     }
