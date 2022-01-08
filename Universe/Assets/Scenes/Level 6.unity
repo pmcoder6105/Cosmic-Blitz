@@ -11633,6 +11633,10 @@ PrefabInstance:
       value: Rock 9 (18)
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -16161,7 +16165,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 53
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -22022,6 +22026,10 @@ PrefabInstance:
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_Name
       value: Rock 9 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
@@ -28025,6 +28033,10 @@ PrefabInstance:
       value: Rock 9 (14)
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -28699,6 +28711,10 @@ PrefabInstance:
     - target: {fileID: 109854, guid: 1ff824149eae4314da4f1eef270bb660, type: 3}
       propertyPath: m_Name
       value: Rock 5 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 109854, guid: 1ff824149eae4314da4f1eef270bb660, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 109854, guid: 1ff824149eae4314da4f1eef270bb660, type: 3}
       propertyPath: m_TagString
@@ -33680,6 +33696,10 @@ PrefabInstance:
       value: Rock 9 (6)
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -33920,8 +33940,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675417307}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -11.7, y: 26.6, z: 12.5}
-  m_LocalScale: {x: 1.4285713, y: 1.428571, z: 1.428571}
+  m_LocalPosition: {x: -11.699999, y: 26.600012, z: 12.500006}
+  m_LocalScale: {x: 1.4285713, y: 1.4285717, z: 1.4285717}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 910664944}
@@ -36436,6 +36456,10 @@ PrefabInstance:
       value: Rock 9 (12)
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -36793,6 +36817,10 @@ PrefabInstance:
       value: Rock 9 (11)
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -37093,6 +37121,10 @@ PrefabInstance:
     - target: {fileID: 135572, guid: 4f9eb78926c668f4cb77ae240ebc4e7b, type: 3}
       propertyPath: m_Name
       value: Rock 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 135572, guid: 4f9eb78926c668f4cb77ae240ebc4e7b, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 135572, guid: 4f9eb78926c668f4cb77ae240ebc4e7b, type: 3}
       propertyPath: m_TagString
@@ -37398,6 +37430,10 @@ PrefabInstance:
       value: Rock 9 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -37411,15 +37447,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 448204, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 28.114801
+      value: 28.114805
+      objectReference: {fileID: 0}
+    - target: {fileID: 448204, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5372533
       objectReference: {fileID: 0}
     - target: {fileID: 448204, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.290365
+      value: -6.290367
       objectReference: {fileID: 0}
     - target: {fileID: 448204, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40.076393
+      value: 40.076385
       objectReference: {fileID: 0}
     - target: {fileID: 448204, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -38274,6 +38314,10 @@ PrefabInstance:
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_Name
       value: Rock 9 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
@@ -39957,6 +40001,10 @@ PrefabInstance:
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_Name
       value: Rock 9 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
@@ -45532,6 +45580,10 @@ PrefabInstance:
       value: Rock 9 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -45755,6 +45807,10 @@ PrefabInstance:
       value: Rock 9 (13)
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -45845,6 +45901,10 @@ PrefabInstance:
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_Name
       value: Rock 9 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
@@ -46748,6 +46808,10 @@ PrefabInstance:
       value: Rock 5 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 109854, guid: 1ff824149eae4314da4f1eef270bb660, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 109854, guid: 1ff824149eae4314da4f1eef270bb660, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -47049,6 +47113,10 @@ PrefabInstance:
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_Name
       value: Rock 9 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
@@ -51266,7 +51334,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 53
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -56634,7 +56702,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 53
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -57601,6 +57669,10 @@ PrefabInstance:
       value: Rock 5
       objectReference: {fileID: 0}
     - target: {fileID: 109854, guid: 1ff824149eae4314da4f1eef270bb660, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 109854, guid: 1ff824149eae4314da4f1eef270bb660, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -57811,6 +57883,10 @@ PrefabInstance:
       value: Rock 9 (8)
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -57901,6 +57977,10 @@ PrefabInstance:
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_Name
       value: Rock 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
@@ -63518,6 +63598,10 @@ PrefabInstance:
       value: Rock 5 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 109854, guid: 1ff824149eae4314da4f1eef270bb660, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 109854, guid: 1ff824149eae4314da4f1eef270bb660, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -63604,6 +63688,10 @@ PrefabInstance:
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_Name
       value: Rock 9 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
@@ -67549,7 +67637,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 53
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -68516,6 +68604,10 @@ PrefabInstance:
       value: Rock 9 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -68723,6 +68815,10 @@ PrefabInstance:
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_Name
       value: Rock 9 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
@@ -69194,6 +69290,10 @@ PrefabInstance:
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_Name
       value: Rock 9 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
@@ -69669,6 +69769,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 44.295
       objectReference: {fileID: 0}
+    - target: {fileID: 2384220, guid: 315ec8f592984544584a6993bc4e07dd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2100069309, guid: 315ec8f592984544584a6993bc4e07dd, type: 3}
       propertyPath: hitPoints
       value: 21
@@ -69854,13 +69958,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 333936070, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 53
+      objectReference: {fileID: 0}
     - target: {fileID: 368703978, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 368703981, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 53
+      objectReference: {fileID: 0}
     - target: {fileID: 415600661, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415600664, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 1815173143, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: hitPoints
@@ -69873,6 +69989,10 @@ PrefabInstance:
     - target: {fileID: 1819534422, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819534425, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 1080553948372411, guid: 83f9e87a6c219f54984147340eea1b17, type: 3}
       propertyPath: m_IsActive
@@ -69926,6 +70046,10 @@ PrefabInstance:
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_Name
       value: Rock 9 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111800, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
       propertyPath: m_TagString
@@ -81154,8 +81278,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: verticalControlSpeed
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: horizontalControlSpeed
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: timeToWaitUntilNextLevel
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: amountToRotateOnPhysicalInput
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: amountToRotateOnPlayerMovement
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4017671492497435072, guid: de1618b9010423f46a917b46264f9f13, type: 3}

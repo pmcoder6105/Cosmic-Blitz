@@ -9768,13 +9768,13 @@ MonoBehaviour:
   enemyShip7: {fileID: 0}
   boundary: {fileID: 0}
   healthPoints: 8
-  horizontalControlSpeed: 75
-  verticalControlSpeed: 50
+  horizontalControlSpeed: 80
+  verticalControlSpeed: 80
   speedOfShipWhenWon: 5
   timeToWaitUntilNextLevel: 8
   amountToIncreaseThrusterWhenWon: 3
-  amountToRotateOnPlayerMovement: 50
-  amountToRotateOnPhysicalInput: 65
+  amountToRotateOnPlayerMovement: 75
+  amountToRotateOnPhysicalInput: 100
   Red: {fileID: 0}
   Blue: {fileID: 0}
   Green: {fileID: 0}

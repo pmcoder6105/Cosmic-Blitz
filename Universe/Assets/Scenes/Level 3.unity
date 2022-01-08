@@ -9641,6 +9641,22 @@ PrefabInstance:
       propertyPath: speedOfShipWhenWon
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: verticalControlSpeed
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: horizontalControlSpeed
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: amountToRotateOnPhysicalInput
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: amountToRotateOnPlayerMovement
+      value: 75
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4017671492497435072, guid: de1618b9010423f46a917b46264f9f13, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: de1618b9010423f46a917b46264f9f13, type: 3}

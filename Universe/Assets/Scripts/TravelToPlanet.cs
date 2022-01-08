@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TravelToPlanet : MonoBehaviour
 {
-    float verticalControlSpeed = 50;
+    [SerializeField] float verticalControlSpeed = 50;
 
 
     void Start()
@@ -15,7 +15,7 @@ public class TravelToPlanet : MonoBehaviour
     void Update()
     {
         transform.Translate(0, 0, .2f * Time.deltaTime * verticalControlSpeed);
-        if (Time.timeSinceLevelLoad > 20)
+        if (Time.timeSinceLevelLoad > 10)
         {
             SceneManager.LoadScene(7);
         }
