@@ -11,8 +11,10 @@ public class Player : MonoBehaviour
     [SerializeField] public ParticleSystem thruster;
     [SerializeField] ParticleSystem hitSpark;
     [SerializeField] ParticleSystem winBoostFlame;
+    [SerializeField] ParticleSystem leftThruster;
+    [SerializeField] ParticleSystem rightThruster;
 
-    
+
     [SerializeField] GameObject Heart1;
     [SerializeField] GameObject Heart2;
     [SerializeField] GameObject Heart3;
@@ -205,6 +207,12 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(0, -0.5f * Time.deltaTime * amountToRotateOnPlayerMovement, 0);
+            rightThruster.Play();
+        }
+
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            rightThruster.Stop();
         }
 
         if (Input.GetKey(KeyCode.D))
@@ -215,16 +223,34 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             transform.Rotate(0, 0.5f * Time.deltaTime * amountToRotateOnPlayerMovement, 0);
+            leftThruster.Play();
+        }
+
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            leftThruster.Stop();
         }
 
         if (Input.GetKey(KeyCode.LeftArrow)) 
         {
             transform.Rotate(0, -0.8f * Time.deltaTime * amountToRotateOnPhysicalInput, 0);
+            rightThruster.Play();
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            rightThruster.Stop();
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Rotate(0, 0.8f * Time.deltaTime * amountToRotateOnPhysicalInput, 0);
+            leftThruster.Play();
+        }
+
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            leftThruster.Stop();
         }
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
@@ -423,6 +449,8 @@ public class Player : MonoBehaviour
         }
         leftLazer.Stop();
         rightLazer.Stop();
+        leftThruster.Stop();
+        rightThruster.Stop();
     }
 
     void OnParticleCollision(GameObject other)
@@ -497,6 +525,8 @@ public class Player : MonoBehaviour
         }
         leftLazer.Stop();
         rightLazer.Stop();
+        leftThruster.Stop();
+        rightThruster.Stop();
     }
 
     public void LoadCurrentScene()
@@ -518,6 +548,8 @@ public class Player : MonoBehaviour
         GetComponent<MeshRenderer>().enabled = false;
         leftLazer.Stop();
         rightLazer.Stop();
+        leftThruster.Stop();
+        rightThruster.Stop();
         Destroy(Heart1);
         Destroy(Heart2);
         Destroy(Heart3);
