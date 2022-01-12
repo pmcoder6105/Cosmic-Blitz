@@ -9753,8 +9753,8 @@ MonoBehaviour:
   thruster: {fileID: 6246221071191801031}
   hitSpark: {fileID: 4972780006261191017}
   winBoostFlame: {fileID: 0}
-  leftThruster: {fileID: 1124565664932862612}
-  rightThruster: {fileID: 8462890443789084168}
+  leftThruster: {fileID: 8462890443789084168}
+  rightThruster: {fileID: 1124565664932862612}
   Heart1: {fileID: 0}
   Heart2: {fileID: 0}
   Heart3: {fileID: 0}
