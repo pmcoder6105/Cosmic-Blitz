@@ -26,7 +26,7 @@ public class Level6Portal : MonoBehaviour
     {
         Invoke(nameof(LoadFinishScene), 3f);
         finishLevel6Timeline.SetActive(true);
-        player.transform.position = new Vector3(-81.45f, 0.5f, 213.9f);
+        player.transform.position = new Vector3(-83.49f, 207.37f, 19f);
     }
 
     void LoadFinishScene()

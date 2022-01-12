@@ -42,7 +42,6 @@ public class Player : MonoBehaviour
     [SerializeField] int amountToRotateOnPlayerMovement = 50;
     [SerializeField] int amountToRotateOnPhysicalInput = 65;
     int amountToEmitLazer = 1;
-    [SerializeField] float amountToTranslateWhenWarping = 0.5f;
 
 
     [SerializeField] Material Red;
