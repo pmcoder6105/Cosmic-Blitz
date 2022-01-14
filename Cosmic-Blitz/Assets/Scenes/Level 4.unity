@@ -6013,11 +6013,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198357973136645638, guid: b2deeda25a8974340a910daebd4dc52d, type: 3}
       propertyPath: playOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198426081105753050, guid: b2deeda25a8974340a910daebd4dc52d, type: 3}
       propertyPath: playOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2deeda25a8974340a910daebd4dc52d, type: 3}
@@ -9089,11 +9089,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198357973136645638, guid: b2deeda25a8974340a910daebd4dc52d, type: 3}
       propertyPath: playOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198426081105753050, guid: b2deeda25a8974340a910daebd4dc52d, type: 3}
       propertyPath: playOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2deeda25a8974340a910daebd4dc52d, type: 3}
@@ -28989,11 +28989,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198357973136645638, guid: b2deeda25a8974340a910daebd4dc52d, type: 3}
       propertyPath: playOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198426081105753050, guid: b2deeda25a8974340a910daebd4dc52d, type: 3}
       propertyPath: playOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2deeda25a8974340a910daebd4dc52d, type: 3}

@@ -51,7 +51,7 @@ public class Level6Portal : MonoBehaviour
             GetComponent<SpriteRenderer>().enabled = true;
             GetComponent<BoxCollider>().enabled = true;
             Invoke(nameof(TurnOffColliderWhenWarping), 0.5f);
-            Invoke(nameof(DestroyPlayerWhenTimeRunsOut), 30);
+            Invoke(nameof(DestroyPlayerWhenTimeRunsOut), 25);
             finishText1.SetActive(true);
             finishText2.SetActive(true);
         }

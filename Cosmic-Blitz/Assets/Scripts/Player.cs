@@ -83,7 +83,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         ProcessShip();
-        DebugKeys();
         WinOnEnemyDestruction();
         MakeSureCollisionDoesntAffectPlayerPosition();
     }
@@ -158,27 +157,6 @@ public class Player : MonoBehaviour
             {
                 audioSource.PlayOneShot(win);
             }
-        }
-    }
-    
-    void DebugKeys()
-    {
-        if (Input.GetKey(KeyCode.C))
-        {
-            GetComponent<BoxCollider>().enabled = false;
-        }
-        if (Input.GetKey(KeyCode.L))
-        {
-            LoadNextScene();
-        }
-        if (Input.GetKey(KeyCode.Alpha6))
-        {
-            transform.position = new Vector3(-81.38f, 145.74f, 19);
-        }
-        if (Input.GetKey(KeyCode.Alpha7))
-        {
-            transform.position = new Vector3(-80.04688f, 193.9698f, 19);
-            Destroy(enemyShip1);
         }
     }
     
