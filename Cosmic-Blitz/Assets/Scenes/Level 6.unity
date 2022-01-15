@@ -6629,6 +6629,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 451264940}
     - target: {fileID: 2778133533489974855, guid: 9299a39dfc57dd944a701a6916bbda08, type: 3}
+      propertyPath: thruster
+      value: 
+      objectReference: {fileID: 451264940}
+    - target: {fileID: 2778133533489974855, guid: 9299a39dfc57dd944a701a6916bbda08, type: 3}
       propertyPath: hitPoints
       value: 50
       objectReference: {fileID: 0}
@@ -35964,6 +35968,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 108508402}
     - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
+      propertyPath: thruster
+      value: 
+      objectReference: {fileID: 108508402}
+    - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
       propertyPath: hitPoints
       value: 3
       objectReference: {fileID: 0}
@@ -38986,6 +38994,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 98488880}
     - target: {fileID: 7030980007642858847, guid: 669bbe08a02ae724681f55a2b1ca11e9, type: 3}
+      propertyPath: thruster
+      value: 
+      objectReference: {fileID: 98488880}
+    - target: {fileID: 7030980007642858847, guid: 669bbe08a02ae724681f55a2b1ca11e9, type: 3}
       propertyPath: hitPoints
       value: 24
       objectReference: {fileID: 0}
@@ -39412,6 +39424,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
       propertyPath: e6Sparks
+      value: 
+      objectReference: {fileID: 504717023}
+    - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+      propertyPath: thruster
       value: 
       objectReference: {fileID: 504717023}
     - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
@@ -41095,6 +41111,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2936693858682003156, guid: e6357d3fbfa61be41bc8c323be3ed454, type: 3}
       propertyPath: e6Sparks
+      value: 
+      objectReference: {fileID: 244978560}
+    - target: {fileID: 2936693858682003156, guid: e6357d3fbfa61be41bc8c323be3ed454, type: 3}
+      propertyPath: thruster
       value: 
       objectReference: {fileID: 244978560}
     - target: {fileID: 2936693858682003156, guid: e6357d3fbfa61be41bc8c323be3ed454, type: 3}
@@ -60732,6 +60752,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2042757178}
     - target: {fileID: 2038510793714340502, guid: 1f971c002a6e4a94983ae1d668db717c, type: 3}
+      propertyPath: thruster
+      value: 
+      objectReference: {fileID: 2042757178}
+    - target: {fileID: 2038510793714340502, guid: 1f971c002a6e4a94983ae1d668db717c, type: 3}
       propertyPath: hitPoints
       value: 9
       objectReference: {fileID: 0}
@@ -77704,7 +77728,7 @@ MonoBehaviour:
   rightLazer1: {fileID: 0}
   leftLazer2: {fileID: 0}
   rightLazer2: {fileID: 0}
-  e6Sparks: {fileID: 628135630}
+  thruster: {fileID: 0}
   e11v1Thruster: {fileID: 0}
   e11v2Thruster: {fileID: 0}
   e11v3Thruster: {fileID: 0}

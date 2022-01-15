@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Level6Portal : MonoBehaviour
 {
+    [Header("Reference")]
     Player player;
+    
+    [Header("Necessities")]
     [SerializeField] GameObject finishLevel6Timeline;
     [SerializeField] GameObject finishText1, finishText2;
      
-    // Start is called before the first frame update
+    //Cache reference
+    //Make sure that portal isn't visible and interactable by turning off sR & bC
     void Start()
     {
         player = FindObjectOfType<Player>();
@@ -16,34 +20,42 @@ public class Level6Portal : MonoBehaviour
         GetComponent<BoxCollider>().enabled = false;
     }
 
-    // Update is called once per frame
+    //Make Sure SeeIfWarpPortalIsActive() is running
     void Update()
     {
         SeeIfWarpPortalIsActive();
     }
 
+    //When you collide with player, load the ending scene in 3 secs
+    //Set the new timeline for when player enters the warp
     void OnCollisionEnter(Collision collision)
     {
         Invoke(nameof(LoadFinishScene), 3f);
         finishLevel6Timeline.SetActive(true);
-        player.transform.position = new Vector3(-83.49f, 207.37f, 19f);
     }
 
+    //Load ending scene
     void LoadFinishScene()
     {
         SceneManager.LoadScene(8);
     }
 
+    //Make sure that player can pass through portal
     void TurnOffColliderWhenWarping()
     {
         GetComponent<BoxCollider>().enabled = false;
     }
 
+    //Destroy player if time runs out
     void DestroyPlayerWhenTimeRunsOut()
     {
         player.CollisionCrashSequence();
     }
 
+    //Make sure portal is visible and interactable
+    //Invoke TurnOffColliderWhenWarping() in .5 seconds
+    //Call DestroyPlayerWhenTimeRunsOut() in 25 seconds
+    //Finally, set both finishing texts active
     void SeeIfWarpPortalIsActive()
     {
         if (player.enemyShip1 == null)
