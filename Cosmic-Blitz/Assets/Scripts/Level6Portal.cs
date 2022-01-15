@@ -41,7 +41,7 @@ public class Level6Portal : MonoBehaviour
 
     void DestroyPlayerWhenTimeRunsOut()
     {
-        player.ParticleCrashSequence();
+        player.CollisionCrashSequence();
     }
 
     void SeeIfWarpPortalIsActive()
