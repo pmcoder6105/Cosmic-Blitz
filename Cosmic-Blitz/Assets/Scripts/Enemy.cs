@@ -5,32 +5,39 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] int hitPoints = 4;
-    [SerializeField] ParticleSystem explosion;
-    [SerializeField] ParticleSystem explosionPlayer;
-    [SerializeField] ParticleSystem hitSpark;
-    [SerializeField] ParticleSystem leftLazer1;
-    [SerializeField] ParticleSystem rightLazer1;
-    [SerializeField] ParticleSystem leftLazer2;
-    [SerializeField] ParticleSystem rightLazer2;
-    [SerializeField] ParticleSystem e6Sparks;
-    [SerializeField] ParticleSystem e11v1Thruster, e11v2Thruster, e11v3Thruster, e11v4Thruster;
+    
+    [Header("All the visuals for the enemy ship")]
+    [Tooltip("This is the explosion")] [SerializeField] ParticleSystem explosion;
+    [Tooltip("This is the explosion vfx for the player ship when the enemy crosses into the home planet")] [SerializeField] ParticleSystem explosionPlayer;
+    [Tooltip("This is the spark that goes off when it takes damage")] [SerializeField] ParticleSystem hitSpark;
+    [Tooltip("This is the first laser")] [SerializeField] ParticleSystem leftLazer1;
+    [Tooltip("This is the second laser")] [SerializeField] ParticleSystem rightLazer1;
+    [Tooltip("This is the third laser")] [SerializeField] ParticleSystem leftLazer2;
+    [Tooltip("This is the fourth laser")] [SerializeField] ParticleSystem rightLazer2;
+    [Tooltip("This is the enemy thruster")] [SerializeField] ParticleSystem thruster;
+    [Tooltip("These are specific thrusters for some of the enemy ships")] [SerializeField] ParticleSystem e11v1Thruster, e11v2Thruster, e11v3Thruster, e11v4Thruster;
     
     
-    Player player;
-    AudioSource aS;
-    
-    
-    [SerializeField] AudioClip destruction;
+    [Header("All of the references")]
+    [Tooltip("This is the player reference")] Player player;
+    [Tooltip("This is the audiosource reference")] AudioSource aS;
 
-    // Start is called before the first frame update
+
+    [Tooltip("This is the destruction sfx")] [SerializeField] AudioClip destruction;
+
+    //Make sure to cache our references
     void Start()
     {
         player = FindObjectOfType<Player>();
         aS = GetComponent<AudioSource>();
     }
 
+    //On particle collision
     void OnParticleCollision(GameObject other)
     {
+        //If the particle was a player particle
+        //reduce hit points by 1
+        //play a vfx
         if (other.gameObject.tag == "Player")
         {
             hitPoints = hitPoints - 1;
@@ -60,9 +67,9 @@ public class Enemy : MonoBehaviour
                     explosion.Play();
                 }
                 Invoke(nameof(DestroyWhenDestroyed), 2f);
-                if (e6Sparks != null)
+                if (thruster != null)
                 {
-                    e6Sparks.Stop();
+                    thruster.Stop();
                 }
                 if (e11v1Thruster != null)
                 {
@@ -84,8 +91,13 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    //What happens on collision
     void OnCollisionEnter(Collision other)
     {
+        //If the collider is the enemy finish pad
+        //play explosionPlayer vfx
+        //Call DestroyWhenEnemyFinishes from the player script
+        //Finally, load the current scene in 2 seconds
         if (other.gameObject.tag == "EnemyFinishPad")
         {                        
             explosionPlayer.Play();            
@@ -93,11 +105,14 @@ public class Enemy : MonoBehaviour
             Invoke(nameof(EnemyLoadCurrentScene), 2f);
         }
     }
+    
+    //Load Current Scene
     void EnemyLoadCurrentScene()
     {
         player.LoadCurrentScene();
     }
     
+    //Destroy the gameObject
     void DestroyWhenDestroyed()
     {
         Destroy(gameObject);
