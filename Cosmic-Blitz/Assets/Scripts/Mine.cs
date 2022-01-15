@@ -4,20 +4,35 @@ using UnityEngine;
 
 public class Mine : MonoBehaviour
 {
-    [SerializeField] int hitPoints = 7;
-    [SerializeField] ParticleSystem mineExplosion;
-    [SerializeField] ParticleSystem hitSpark;
-    [SerializeField] ParticleSystem fuse;
-    AudioSource aS;
-    [SerializeField] AudioClip destruction;
+    [Tooltip("Amount of hits the mine can take before destroying")][SerializeField] int hitPoints = 7;
+    
+    
+    [Header("All mine visuals")]
+    [Tooltip("Explosion vfx that plays when mine explodes")][SerializeField] ParticleSystem mineExplosion;
+    [Tooltip("Sparks vfx that plays when mine takes damage")] [SerializeField] ParticleSystem hitSpark;
+    [Tooltip("Fuse vfx that plays constantly")] [SerializeField] ParticleSystem fuse;
+    
+   
+    [Header("References")]
+    [Tooltip("Referencing audiosource component")] AudioSource aS;
+    
+    [Header("Audio Clips")]
+    [Tooltip("Explosion sfx that plays when mine explodes")] [SerializeField] AudioClip destruction;
 
+    
+    //Cache references
     void Start()
     {
         aS = GetComponent<AudioSource>();
     }
 
+    
+    //On Particle collision 
     void OnParticleCollision(GameObject other)
     {
+        //If the particle collisions are from the player
+        //Reduce hitpoints by 1
+        //play hit spark vfx
         if (other.gameObject.tag == "Player")
         {
             hitPoints = hitPoints - 1;
@@ -45,8 +60,12 @@ public class Mine : MonoBehaviour
         }
     }
 
+    //On collision
     void OnCollisionEnter(Collision other)
     {
+        //If the collisions are from the player
+        //Reduce hitpoints by 1
+        //play hit spark vfx
         if (other.gameObject.tag == "Player")
         {
             hitPoints = hitPoints - 1;
@@ -70,6 +89,7 @@ public class Mine : MonoBehaviour
         }
     }
     
+    //Destroy mine when destroyed
     void DestroyWhenDestroyed()
     {
         Destroy(gameObject);
