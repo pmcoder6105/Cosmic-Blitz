@@ -83891,7 +83891,7 @@ PrefabInstance:
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: win
       value: 
-      objectReference: {fileID: 8300000, guid: d0f2dce76bba96a478d0f5cfccf540ee, type: 3}
+      objectReference: {fileID: 8300000, guid: 167edbd1f8ad4e24b9032876848475ae, type: 3}
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: Blue
       value: 
