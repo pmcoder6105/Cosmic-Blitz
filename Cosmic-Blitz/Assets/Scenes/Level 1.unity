@@ -4608,7 +4608,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1086810770}
-  - component: {fileID: 1086810771}
   m_Layer: 0
   m_Name: Lazer Generator (1)
   m_TagString: Untagged
@@ -4633,26 +4632,6 @@ Transform:
   m_Father: {fileID: 7709556048919818505}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 104.80701, y: 1.0370026, z: 2.2200012}
---- !u!95 &1086810771
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086810769}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ba7d4ad76c7c85d41a79de95b27b7fa7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1088568116
 GameObject:
   m_ObjectHideFlags: 0
