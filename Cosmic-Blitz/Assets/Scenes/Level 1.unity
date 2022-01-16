@@ -5355,6 +5355,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355735679}
   m_CullTransparentMesh: 1
+--- !u!1 &1367042535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1367042536}
+  - component: {fileID: 1367042537}
+  m_Layer: 0
+  m_Name: Thruster Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1367042536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367042535}
+  m_LocalRotation: {x: 0.26275665, y: -0, z: -0, w: 0.9648621}
+  m_LocalPosition: {x: 0.28, y: 2.1614308, z: -7.528573}
+  m_LocalScale: {x: 1.4285712, y: 1.4285715, z: 1.4285715}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237776076}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: -59.533, y: 0, z: 0}
+--- !u!108 &1367042537
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367042535}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 0, g: 0.120423555, b: 1, a: 1}
+  m_Intensity: 60
+  m_Range: 4.1316934
+  m_SpotAngle: 54.671844
+  m_InnerSpotAngle: 20.489277
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1387792295
 GameObject:
   m_ObjectHideFlags: 0
@@ -19225,6 +19319,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1681409768}
     m_Modifications:
+    - target: {fileID: 1615973411017102815, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: m_Range
+      value: 2.6742413
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000870438999274288, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7500005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000870438999274288, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.5150013
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000870438999274288, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7223062
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000870438999274288, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.69157344
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000870438999274288, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 87.51
+      objectReference: {fileID: 0}
     - target: {fileID: 3861610389509505882, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -19368,6 +19486,10 @@ PrefabInstance:
     - target: {fileID: 4626161021722586539, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: m_Intensity
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5368630866644342756, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6246221071191801031, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: InitialModule.startSize.scalar
