@@ -321,6 +321,11 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 3884564256135799640, guid: de1618b9010423f46a917b46264f9f13, type: 3}
   m_PrefabInstance: {fileID: 7660452178307804211}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &94293695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3445260667278793251, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+  m_PrefabInstance: {fileID: 7660452178307804211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &108271895
 GameObject:
   m_ObjectHideFlags: 0
@@ -19360,6 +19365,10 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4626161021722586539, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: m_Intensity
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6246221071191801031, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 1.5
@@ -19371,6 +19380,10 @@ PrefabInstance:
     - target: {fileID: 7411119407090408601, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: m_Volume
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7631308491238913015, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: m_Intensity
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7660452177237939210, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: prewarm
@@ -19588,6 +19601,14 @@ PrefabInstance:
       propertyPath: winBoostFlame
       value: 
       objectReference: {fileID: 91453443}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: lazerGenerator
+      value: 
+      objectReference: {fileID: 94293695}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: lazerGeneratorAnim
+      value: 
+      objectReference: {fileID: 94293695}
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: speedOfShipWhenWon
       value: 5

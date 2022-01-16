@@ -4,19 +4,19 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [Header("All of the ship visuals")]
-    [Tooltip("This is the left laser on the player ship")][SerializeField] ParticleSystem leftLazer;
-    [Tooltip("This is the right laser on the player ship")][SerializeField] ParticleSystem rightLazer;
-    [Tooltip("This is the explosion vfx for the player ship")][SerializeField] ParticleSystem explosion;
-    [Tooltip("This is the main thruster on the player ship")][SerializeField] public ParticleSystem thruster;
-    [Tooltip("This is the spark vfx  that goes off when someone damages the player ship")][SerializeField] ParticleSystem hitSpark;
-    [Tooltip("This is the win vfx that plays when the player ship defeats all enemies")][SerializeField] ParticleSystem winBoostFlame;
-    [Tooltip("This is the left thruster on the player ship")][SerializeField] ParticleSystem leftThruster;
-    [Tooltip("This is the right thruster on the player ship")][SerializeField] ParticleSystem rightThruster;
+    [Tooltip("This is the left laser on the player ship")] [SerializeField] ParticleSystem leftLazer;
+    [Tooltip("This is the right laser on the player ship")] [SerializeField] ParticleSystem rightLazer;
+    [Tooltip("This is the explosion vfx for the player ship")] [SerializeField] ParticleSystem explosion;
+    [Tooltip("This is the main thruster on the player ship")] [SerializeField] public ParticleSystem thruster;
+    [Tooltip("This is the spark vfx  that goes off when someone damages the player ship")] [SerializeField] ParticleSystem hitSpark;
+    [Tooltip("This is the win vfx that plays when the player ship defeats all enemies")] [SerializeField] ParticleSystem winBoostFlame;
+    [Tooltip("This is the left thruster on the player ship")] [SerializeField] ParticleSystem leftThruster;
+    [Tooltip("This is the right thruster on the player ship")] [SerializeField] ParticleSystem rightThruster;
 
 
     [Header("All of the gameObjects the ship needs")]
-    [Tooltip("This is the first heart for the ship")][SerializeField] GameObject Heart1;
-    [Tooltip("This is the second heart for the ship")][SerializeField] GameObject Heart2;
+    [Tooltip("This is the first heart for the ship")] [SerializeField] GameObject Heart1;
+    [Tooltip("This is the second heart for the ship")] [SerializeField] GameObject Heart2;
     [Tooltip("This is the third heart for the ship")] [SerializeField] GameObject Heart3;
     [Tooltip("This is the fourth heart for the ship")] [SerializeField] GameObject Heart4;
     [Tooltip("This is the first damaged heart for the ship")] [SerializeField] GameObject DeadHeart1;
@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     [Tooltip("This is the sixth enemy")] [SerializeField] GameObject enemyShip6;
     [Tooltip("This is the seventh enemy")] [SerializeField] GameObject enemyShip7;
     [Tooltip("This is the boundaries needed to keep the player ship in place")] [SerializeField] GameObject boundary;
+    [Tooltip("This is the lazer generator light effect that plays when you shoot a lazer")][SerializeField] GameObject lazerGenerator;
 
 
     [Header("All of the tunables for the ship")]
@@ -67,12 +68,14 @@ public class Player : MonoBehaviour
     [Tooltip("This is the clip of winning")] [SerializeField] AudioClip win;
     [Tooltip("This is the clip of loosing")] [SerializeField] AudioClip destruct;
 
+
     //At Start(), we want to cache our references and make sure that Time = 0, so our player can read the instructions
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
         Time.timeScale = 0;
+        lazerGenerator.GetComponent<Animator>().enabled = false;
     }
 
     //At Update(), we want to make sure that these three methods are running and working
@@ -167,10 +170,10 @@ public class Player : MonoBehaviour
         }
     }
     
-    //This method is for making the ship move, shoot lazers, rotate, and turn left and right
+    //This method is for making the ship move, shoot lazers, rotate, form a lazer generator, and turn left and right
     void ProcessShip()
     {   
-        //If you click these buttons down, emit a lazer and play the sfx
+        //If you click these buttons down, emit a lazer, play the generator anim, and play the sfx
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             leftLazer.Emit(amountToEmitLazer);
@@ -178,13 +181,17 @@ public class Player : MonoBehaviour
             leftLazer.Play();
             rightLazer.Play();
             audioSource.PlayOneShot(lazer);
+            lazerGenerator.SetActive(true);
+            lazerGenerator.GetComponent<Animator>().enabled = true;
         }
 
-        //If you let go of these buttons, stop the lazers
+        //If you let go of these buttons, stop the generator anim, and stop the lazers
         if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.Mouse0))
         {
             leftLazer.Stop();
             rightLazer.Stop();
+            lazerGenerator.SetActive(false);
+            lazerGenerator.GetComponent<Animator>().enabled = false;
         }
 
         //If you click these buttons down, translate the parent to the left

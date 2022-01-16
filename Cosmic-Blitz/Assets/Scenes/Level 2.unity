@@ -15505,6 +15505,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 91453443}
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: lazerGenerator
+      value: 
+      objectReference: {fileID: 7660452178307804215}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: speedOfShipWhenWon
       value: 5
       objectReference: {fileID: 0}
@@ -15553,6 +15557,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!1 &7660452178307804215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3445260667278793251, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+  m_PrefabInstance: {fileID: 7660452178307804211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7709556048919818505
 Transform:
   m_ObjectHideFlags: 0
