@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     [Tooltip("This is the sixth enemy")] [SerializeField] GameObject enemyShip6;
     [Tooltip("This is the seventh enemy")] [SerializeField] GameObject enemyShip7;
     [Tooltip("This is the boundaries needed to keep the player ship in place")] [SerializeField] GameObject boundary;
-    [Tooltip("This is the lazer generator light effect that plays when you shoot a lazer")][SerializeField] GameObject lazerGenerator;
+    [Tooltip("This is the lazer generator light effect that plays when you shoot a lazer")][SerializeField] public GameObject lazerGenerator;
 
 
     [Header("All of the tunables for the ship")]
