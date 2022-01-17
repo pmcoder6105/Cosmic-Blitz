@@ -10111,12 +10111,10 @@ MonoBehaviour:
   boundary: {fileID: 0}
   lazerGenerator: {fileID: 0}
   healthPoints: 8
-  horizontalControlSpeed: 80
-  verticalControlSpeed: 80
+  verticalControlSpeed: 60
   speedOfShipWhenWon: 5
   timeToWaitUntilNextLevel: 8
   amountToIncreaseThrusterWhenWon: 3
-  amountToRotateOnPlayerMovement: 75
   amountToRotateOnPhysicalInput: 100
   Red: {fileID: 0}
   Blue: {fileID: 0}

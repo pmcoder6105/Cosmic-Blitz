@@ -36,7 +36,6 @@ public class Player : MonoBehaviour
 
     [Header("All of the tunables for the ship")]
     [Tooltip("This is the amount of damage the ship can take before exploding")] [SerializeField] int healthPoints = 8;
-    [Tooltip("This is the amount of turning speed the ship has")] [SerializeField] public float horizontalControlSpeed = 75;
     [Tooltip("This is the amount of thrust the ship has")] [SerializeField] public float verticalControlSpeed = 50;
     [Tooltip("This is the amount of speed the ship has after winning")] [SerializeField] float speedOfShipWhenWon = 5;
     [Tooltip("This is the amount of time the ship has to wait for until the next level loads in")] [SerializeField] int timeToWaitUntilNextLevel = 8;
@@ -240,42 +239,42 @@ public class Player : MonoBehaviour
             audioSource.PlayOneShot(damage);
             hitSpark.Play();
             healthPoints = healthPoints - 1;            
-            if (healthPoints == 7)
+            if (healthPoints <= 7)
             {
                 Heart4.GetComponent<Animator>().enabled = false;
                 Heart4.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 6)
+            if (healthPoints <= 6)
             {
                 DeadHeart4.GetComponent<SpriteRenderer>().enabled = false;
                 Heart4.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 5)
+            if (healthPoints <= 5)
             {
                 Heart3.GetComponent<Animator>().enabled = false;
                 Heart3.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 4)
+            if (healthPoints <= 4)
             {
                 DeadHeart3.GetComponent<SpriteRenderer>().enabled = false;
                 Heart3.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 3)
+            if (healthPoints <= 3)
             {
                 Heart2.GetComponent<Animator>().enabled = false;
                 Heart2.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 2)
+            if (healthPoints <= 2)
             {
                 DeadHeart2.GetComponent<SpriteRenderer>().enabled = false;
                 Heart2.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 1)
+            if (healthPoints <= 1)
             {
                 Heart1.GetComponent<Animator>().enabled = false;
                 Heart1.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 0)
+            if (healthPoints <= 0)
             {
                 CollisionCrashSequence();
                 DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
@@ -291,42 +290,42 @@ public class Player : MonoBehaviour
             audioSource.PlayOneShot(damage);
             hitSpark.Play();
             healthPoints = healthPoints - 3;
-            if (healthPoints == 7)
+            if (healthPoints <= 7)
             {
                 Heart4.GetComponent<Animator>().enabled = false;
                 Heart4.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 6)
+            if (healthPoints <= 6)
             {
                 DeadHeart4.GetComponent<SpriteRenderer>().enabled = false;
                 Heart4.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 5)
+            if (healthPoints <= 5)
             {
                 Heart3.GetComponent<Animator>().enabled = false;
                 Heart3.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 4)
+            if (healthPoints <= 4)
             {
                 DeadHeart3.GetComponent<SpriteRenderer>().enabled = false;
                 Heart3.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 3)
+            if (healthPoints <= 3)
             {
                 Heart2.GetComponent<Animator>().enabled = false;
                 Heart2.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 2)
+            if (healthPoints <= 2)
             {
                 DeadHeart2.GetComponent<SpriteRenderer>().enabled = false;
                 Heart2.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 1)
+            if (healthPoints <= 1)
             {
                 Heart1.GetComponent<Animator>().enabled = false;
                 Heart1.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 0)
+            if (healthPoints <= 0)
             {
                 CollisionCrashSequence();
                 DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
@@ -342,42 +341,42 @@ public class Player : MonoBehaviour
             audioSource.PlayOneShot(damage);
             hitSpark.Play();
             healthPoints = healthPoints - 5;
-            if (healthPoints == 7)
+            if (healthPoints <= 7)
             {
                 Heart4.GetComponent<Animator>().enabled = false;
                 Heart4.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 6)
+            if (healthPoints <= 6)
             {
                 DeadHeart4.GetComponent<SpriteRenderer>().enabled = false;
                 Heart4.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 5)
+            if (healthPoints <= 5)
             {
                 Heart3.GetComponent<Animator>().enabled = false;
                 Heart3.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 4)
+            if (healthPoints <= 4)
             {
                 DeadHeart3.GetComponent<SpriteRenderer>().enabled = false;
                 Heart3.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 3)
+            if (healthPoints <= 3)
             {
                 Heart2.GetComponent<Animator>().enabled = false;
                 Heart2.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 2)
+            if (healthPoints <= 2)
             {
                 DeadHeart2.GetComponent<SpriteRenderer>().enabled = false;
                 Heart2.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 1)
+            if (healthPoints <= 1)
             {
                 Heart1.GetComponent<Animator>().enabled = false;
                 Heart1.GetComponent<SpriteRenderer>().enabled = false;
             }
-            if (healthPoints == 0)
+            if (healthPoints <= 0)
             {
                 CollisionCrashSequence();
                 DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
