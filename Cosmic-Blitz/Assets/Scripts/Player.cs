@@ -178,8 +178,6 @@ public class Player : MonoBehaviour
         {
             leftLazer.Emit(amountToEmitLazer);
             rightLazer.Emit(amountToEmitLazer);
-            leftLazer.Play();
-            rightLazer.Play();
             audioSource.PlayOneShot(lazer);
             lazerGenerator.SetActive(true);
             lazerGenerator.GetComponent<Animator>().enabled = true;
