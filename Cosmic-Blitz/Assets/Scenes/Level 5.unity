@@ -8174,6 +8174,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3907833751807807751, guid: 935092da8210ce844895c8a67045f830, type: 3}
     - target: {fileID: 2936693858682003156, guid: e6357d3fbfa61be41bc8c323be3ed454, type: 3}
+      propertyPath: thruster
+      value: 
+      objectReference: {fileID: 667030044}
+    - target: {fileID: 2936693858682003156, guid: e6357d3fbfa61be41bc8c323be3ed454, type: 3}
       propertyPath: hitPoints
       value: 50
       objectReference: {fileID: 0}
@@ -8466,6 +8470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Ship 15
       objectReference: {fileID: 0}
+    - target: {fileID: 2778133533489974855, guid: 9299a39dfc57dd944a701a6916bbda08, type: 3}
+      propertyPath: thruster
+      value: 
+      objectReference: {fileID: 519956268}
     - target: {fileID: 2778133533489974855, guid: 9299a39dfc57dd944a701a6916bbda08, type: 3}
       propertyPath: hitPoints
       value: 50
