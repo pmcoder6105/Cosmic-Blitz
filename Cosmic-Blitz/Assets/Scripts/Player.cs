@@ -41,7 +41,6 @@ public class Player : MonoBehaviour
     [Tooltip("This is the amount of speed the ship has after winning")] [SerializeField] float speedOfShipWhenWon = 5;
     [Tooltip("This is the amount of time the ship has to wait for until the next level loads in")] [SerializeField] int timeToWaitUntilNextLevel = 8;
     [Tooltip("This is the amount of thrust the ship has after winning")] [SerializeField] public float amountToIncreaseThrusterWhenWon = 3;
-    [Tooltip("This is the amount of rotation the ship has when you move the player left or right")] [SerializeField] int amountToRotateOnPlayerMovement = 50;
     [Tooltip("This is the amount of rotation the ship has when you manually rotate the ship by arrow keys")] [SerializeField] int amountToRotateOnPhysicalInput = 65;
     [Tooltip("This is the amount of laser the ship will emit")] int amountToEmitLazer = 1;
 
@@ -192,66 +191,28 @@ public class Player : MonoBehaviour
             lazerGenerator.GetComponent<Animator>().enabled = false;
         }
 
-        //If you click these buttons down, translate the parent to the left
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.parent.Translate(-.2f * Time.deltaTime * horizontalControlSpeed, 0, 0);
-        }
-
         //If you click these buttons down, rotate the ship and play the right thruster vfx
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Rotate(0, -0.5f * Time.deltaTime * amountToRotateOnPlayerMovement, 0);
-            rightThruster.Play();
-        }
-
-        //If you let go of these buttons, stop the thruster
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            rightThruster.Stop();
-        }
-
-        //If you click these buttons down, translate the parent to the right
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.parent.Translate(.2f * Time.deltaTime * horizontalControlSpeed, 0, 0);
-        }
-
-        //If you click these buttons down, rotate the ship and play the left thruster vfx
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(0, 0.5f * Time.deltaTime * amountToRotateOnPlayerMovement, 0);
-            leftThruster.Play();
-        }
-
-        //If you let go of these buttons, stop the thruster
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            leftThruster.Stop();
-        }
-
-        //If you click the button, rotate and play the right thruster vfx
-        if (Input.GetKey(KeyCode.LeftArrow)) 
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(0, -0.8f * Time.deltaTime * amountToRotateOnPhysicalInput, 0);
             rightThruster.Play();
         }
 
-        //If you let go of this button, stop playing the thruster
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        //If you let go of these buttons, stop the thruster
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             rightThruster.Stop();
         }
 
-        //If you click the button, rotate and play the left thruster vfx
-        if (Input.GetKey(KeyCode.RightArrow))
+        //If you click these buttons down, rotate the ship and play the left thruster vfx
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             transform.Rotate(0, 0.8f * Time.deltaTime * amountToRotateOnPhysicalInput, 0);
             leftThruster.Play();
         }
 
-        //If you let go of this button, stop playing the thruster
-        if (Input.GetKeyUp(KeyCode.RightArrow))
+        //If you let go of these buttons, stop the thruster
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
         {
             leftThruster.Stop();
         }
@@ -259,13 +220,13 @@ public class Player : MonoBehaviour
         //If you click these buttons, move forward
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Translate(0, 0, 0.2f * Time.deltaTime * verticalControlSpeed);
+            rigidBody.AddRelativeForce(0, 0, 500 * Time.deltaTime * verticalControlSpeed);
         }
 
         //If you click these buttons, move back
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Translate(0, 0, -0.2f * Time.deltaTime * verticalControlSpeed);
+            rigidBody.AddRelativeForce(0, 0, -500 * Time.deltaTime * verticalControlSpeed);
         }
     }
 
