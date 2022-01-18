@@ -11,6 +11,7 @@ TagManager:
   - Planet
   - BossTrigger
   - Portal
+  - NewWaveSpawner
   layers:
   - Default
   - TransparentFX

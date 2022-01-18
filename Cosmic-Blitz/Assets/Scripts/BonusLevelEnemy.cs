@@ -11,6 +11,9 @@ public class BonusLevelEnemy : MonoBehaviour
     [Tooltip("This is the explosion vfx for the player ship when the enemy crosses into the home planet")] [SerializeField] ParticleSystem explosionPlayer;
     [Tooltip("This is the spark that goes off when it takes damage")] [SerializeField] ParticleSystem hitSpark;
     [Tooltip("This is the enemy thruster")] [SerializeField] ParticleSystem thruster;
+
+    [Header("GameObjects")]
+    [SerializeField] GameObject passOverObject;
     
     
     [Header("All of the references")]
@@ -18,6 +21,7 @@ public class BonusLevelEnemy : MonoBehaviour
     [Tooltip("This is the audiosource reference")] AudioSource aS;
 
 
+    [Header("AudioClips")]
     [Tooltip("This is the destruction sfx")] [SerializeField] AudioClip destruction;
 
     //Make sure to cache our references
@@ -29,7 +33,7 @@ public class BonusLevelEnemy : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(0, 0, 0.1f * Time.deltaTime * 10);
+        transform.Translate(0, 0, 0.1f * Time.deltaTime * 30);
         if (hitSpark == null)
         {
             return;
@@ -57,9 +61,8 @@ public class BonusLevelEnemy : MonoBehaviour
                     aS.PlayOneShot(destruction);
                 }
                 GetComponent<MeshRenderer>().enabled = false;
-                GetComponent<Enemy>().enabled = false;
+                GetComponent<BonusLevelEnemy>().enabled = false;
                 GetComponent<BoxCollider>().enabled = false;
-                GetComponent<Animator>().enabled = false;
                 if (!explosion.isPlaying)
                 {
                     explosion.Play();
@@ -71,6 +74,8 @@ public class BonusLevelEnemy : MonoBehaviour
                 }
             }
         }
+
+
     }
 
     //What happens on collision
@@ -80,11 +85,9 @@ public class BonusLevelEnemy : MonoBehaviour
         //play explosionPlayer vfx
         //Call DestroyWhenEnemyFinishes from the player script
         //Finally, load the current scene in 2 seconds
-        if (other.gameObject.tag == "EnemyFinishPad")
-        {                        
-            explosionPlayer.Play();            
-            player.DestroyWhenEnemyFinishes();
-            Invoke(nameof(EnemyLoadCurrentScene), 2f);
+        if (other.gameObject.tag == "Player")
+        {
+            player.CollisionCrashSequence();
         }
     }
     
