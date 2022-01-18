@@ -220,7 +220,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &36176847 stripped
 Transform:
@@ -328,6 +331,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &36176856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36176848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &65370269
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65370269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.94, z: 0}
+  m_LocalPosition: {x: 0, y: 13.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -457,7 +478,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &76978233 stripped
 Transform:
@@ -565,6 +589,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &76978242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76978234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!198 &91453443 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 3884564256135799640, guid: de1618b9010423f46a917b46264f9f13, type: 3}
@@ -894,7 +936,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &136119137 stripped
 Transform:
@@ -1002,6 +1047,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &136119146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136119138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &167908564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1089,7 +1152,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &167908565 stripped
 Transform:
@@ -1197,6 +1263,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &167908574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167908566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &183816218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,7 +1305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183816218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.57, z: 0}
+  m_LocalPosition: {x: 0, y: 3.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1460,7 +1544,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &198130784 stripped
 Transform:
@@ -1568,6 +1655,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &198130793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198130785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &214712816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1726,7 +1831,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &241547240 stripped
 Transform:
@@ -1834,6 +1942,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &241547249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241547241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &243587284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1921,7 +2047,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &243587285 stripped
 Transform:
@@ -2029,6 +2158,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &243587294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243587286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &250766069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2116,7 +2263,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &250766070 stripped
 Transform:
@@ -2224,6 +2374,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &250766079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250766071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &276095254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2311,7 +2479,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &276095255 stripped
 Transform:
@@ -2419,11 +2590,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &304851757 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
-  m_PrefabInstance: {fileID: 7944567895806310437}
+--- !u!114 &276095264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276095256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &305214875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2511,7 +2695,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &305214876 stripped
 Transform:
@@ -2619,6 +2806,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &305214885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305214877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &319134923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5619676214414632171, guid: 6938cff0d92a73941a9d55d3e5f31b21, type: 3}
@@ -2876,7 +3081,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &348587076 stripped
 Transform:
@@ -2984,6 +3192,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &348587085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348587077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!198 &368716665 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 7534470696319395331, guid: de1618b9010423f46a917b46264f9f13, type: 3}
@@ -3173,7 +3399,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &450030582 stripped
 Transform:
@@ -3281,6 +3510,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &450030591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450030583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &468698203
 GameObject:
   m_ObjectHideFlags: 0
@@ -3694,7 +3941,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &510480825 stripped
 Transform:
@@ -3802,6 +4052,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &510480834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510480826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &511258601
 GameObject:
   m_ObjectHideFlags: 0
@@ -4106,7 +4374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554080662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.55, z: 0}
+  m_LocalPosition: {x: 0, y: 7.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4481,7 +4749,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &620163550 stripped
 Transform:
@@ -4589,6 +4860,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &620163559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620163551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &642168771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4676,7 +4965,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &642168772 stripped
 Transform:
@@ -4784,6 +5076,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &642168781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642168773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &644977899
 GameObject:
   m_ObjectHideFlags: 0
@@ -5643,7 +5953,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &750473595 stripped
 Transform:
@@ -5751,6 +6064,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &750473604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750473596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &755329949
 GameObject:
   m_ObjectHideFlags: 0
@@ -6070,7 +6401,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &767382240 stripped
 Transform:
@@ -6178,6 +6512,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &767382249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767382241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &767526498
 GameObject:
   m_ObjectHideFlags: 0
@@ -6508,7 +6860,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &800383065 stripped
 Transform:
@@ -6616,6 +6971,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &800383074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800383066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!198 &823924822 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1124565664932862612, guid: de1618b9010423f46a917b46264f9f13, type: 3}
@@ -7124,7 +7497,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &834625302 stripped
 Transform:
@@ -7232,6 +7608,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &834625311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834625303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &843395025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8686737404434790299, guid: 519a1b80b1285c746b2cc76d2c1f51a3, type: 3}
@@ -7329,7 +7723,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &863731308 stripped
 Transform:
@@ -7437,6 +7834,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &863731317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863731309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &879339726
 GameObject:
   m_ObjectHideFlags: 0
@@ -7610,7 +8025,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &941545909 stripped
 Transform:
@@ -7718,6 +8136,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &941545918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941545910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &945373054
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,7 +8471,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &964812382 stripped
 Transform:
@@ -8143,6 +8582,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &964812391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964812383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &967847241
 GameObject:
   m_ObjectHideFlags: 0
@@ -8804,7 +9261,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1158879632 stripped
 Transform:
@@ -8912,6 +9372,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1158879641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158879633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1174446445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8999,7 +9477,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1174446446 stripped
 Transform:
@@ -9107,6 +9588,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1174446455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174446447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1207370081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9194,7 +9693,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1207370082 stripped
 Transform:
@@ -9302,6 +9804,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1207370091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207370083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1217875511
 GameObject:
   m_ObjectHideFlags: 0
@@ -9524,7 +10044,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1233352894 stripped
 Transform:
@@ -9632,6 +10155,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1233352903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233352895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1234447713
 GameObject:
   m_ObjectHideFlags: 0
@@ -10029,7 +10570,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1282448570 stripped
 Transform:
@@ -10137,6 +10681,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1282448579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282448571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1298159661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10290,7 +10852,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1299090445 stripped
 Transform:
@@ -10398,6 +10963,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1299090454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299090446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1304078822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10485,7 +11068,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1304078823 stripped
 Transform:
@@ -10593,6 +11179,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1304078832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304078824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1355735679
 GameObject:
   m_ObjectHideFlags: 0
@@ -10950,7 +11554,7 @@ PlayableDirector:
   - key: {fileID: -8587662935595193973, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
     value: {fileID: 0}
   - key: {fileID: -5594409106318383937, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
-    value: {fileID: 304851757}
+    value: {fileID: 0}
   - key: {fileID: -610405963682605298, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
     value: {fileID: 328863095}
   - key: {fileID: 5933982126001134325, guid: e4146fbfb7389b04ea939368d9504d31, type: 2}
@@ -11160,7 +11764,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1446521369 stripped
 Transform:
@@ -11268,6 +11875,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1446521378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446521370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1505599054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11355,7 +11980,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1505599055 stripped
 Transform:
@@ -11463,6 +12091,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1505599064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505599056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1506478029
 GameObject:
   m_ObjectHideFlags: 0
@@ -11684,7 +12330,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1522523815 stripped
 Transform:
@@ -11792,6 +12441,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1522523824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522523816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1535348427
 GameObject:
   m_ObjectHideFlags: 0
@@ -12227,7 +12894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1556856868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12559,7 +13226,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1595658844 stripped
 Transform:
@@ -12667,6 +13337,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1595658853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595658845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1615652086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12754,7 +13442,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1615652087 stripped
 Transform:
@@ -12862,6 +13553,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1615652096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615652088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1650829494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12949,7 +13658,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1650829495 stripped
 Transform:
@@ -13057,6 +13769,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1650829504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650829496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1681409767
 GameObject:
   m_ObjectHideFlags: 0
@@ -13378,7 +14108,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1705537433 stripped
 Transform:
@@ -13486,6 +14219,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1705537442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705537434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1721478613
 GameObject:
   m_ObjectHideFlags: 0
@@ -14030,7 +14781,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1769493561 stripped
 Transform:
@@ -14138,6 +14892,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1769493570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769493562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1779080459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14225,7 +14997,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1779080460 stripped
 Transform:
@@ -14333,6 +15108,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1779080469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779080461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1799679043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14420,7 +15213,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1799679044 stripped
 Transform:
@@ -14528,6 +15324,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1799679053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799679045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1819083893
 GameObject:
   m_ObjectHideFlags: 0
@@ -14552,7 +15366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819083893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.22, z: 0}
+  m_LocalPosition: {x: 0, y: 10.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14657,7 +15471,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1822214021 stripped
 Transform:
@@ -14765,6 +15582,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1822214030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822214022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1853478634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14852,7 +15687,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1853478635 stripped
 Transform:
@@ -14960,6 +15798,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1853478644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853478636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1855219272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15047,7 +15903,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1855219273 stripped
 Transform:
@@ -15155,6 +16014,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1855219282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855219274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1875207249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15242,7 +16119,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1875207250 stripped
 Transform:
@@ -15350,6 +16230,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1875207259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875207251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &1882489709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15437,7 +16335,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1882489710 stripped
 Transform:
@@ -15545,6 +16446,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1882489719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882489711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1884841772
 GameObject:
   m_ObjectHideFlags: 0
@@ -15692,7 +16611,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1891835739 stripped
 Transform:
@@ -15800,6 +16722,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1891835748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891835740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1892900554
 GameObject:
   m_ObjectHideFlags: 0
@@ -16194,7 +17134,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1909166612 stripped
 Transform:
@@ -16302,6 +17245,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1909166621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909166613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1924092980
 GameObject:
   m_ObjectHideFlags: 0
@@ -16659,7 +17620,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &1958939104 stripped
 Transform:
@@ -16767,6 +17731,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1958939113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958939105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &1984589973
 GameObject:
   m_ObjectHideFlags: 0
@@ -16951,7 +17933,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &2019421200 stripped
 Transform:
@@ -17059,6 +18044,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2019421209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019421201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &2024768146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17146,7 +18149,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &2024768147 stripped
 Transform:
@@ -17254,6 +18260,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2024768156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024768148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &2037573338
 GameObject:
   m_ObjectHideFlags: 0
@@ -17686,7 +18710,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &2054281601 stripped
 Transform:
@@ -17794,6 +18821,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2054281610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054281602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &2060320948
 GameObject:
   m_ObjectHideFlags: 0
@@ -17957,7 +19002,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &2060556689 stripped
 Transform:
@@ -18065,6 +19113,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2060556698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060556690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &2068783400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18152,7 +19218,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &2068783401 stripped
 Transform:
@@ -18260,6 +19329,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2068783410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068783402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &2082786602
 GameObject:
   m_ObjectHideFlags: 0
@@ -18393,7 +19480,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &2099259858 stripped
 Transform:
@@ -18501,6 +19591,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2099259867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099259859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &2106166493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18588,7 +19696,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &2106166494 stripped
 Transform:
@@ -18696,6 +19807,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2106166503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106166495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1 &2133983211
 GameObject:
   m_ObjectHideFlags: 0
@@ -19676,13 +20805,34 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1269116562925425082, guid: 9eafec2478441af418574f3e9e971f8d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 304851757, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+    - {fileID: 567213249, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
 --- !u!4 &7944567895806310438 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7944567895617739686, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
   m_PrefabInstance: {fileID: 7944567895806310437}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7944567895806310444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681263991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00111e4afd28d914587e64d80a03debc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 4
+  explosion: {fileID: 0}
+  explosionPlayer: {fileID: 0}
+  hitSpark: {fileID: 0}
+  thruster: {fileID: 0}
+  destruction: {fileID: 0}
 --- !u!1001 &8591675759673724337
 PrefabInstance:
   m_ObjectHideFlags: 0
