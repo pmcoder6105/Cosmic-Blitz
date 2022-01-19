@@ -8,22 +8,14 @@ public class BonusLevelEnemy : MonoBehaviour
     
     [Header("All the visuals for the enemy ship")]
     [Tooltip("This is the explosion")] [SerializeField] ParticleSystem explosion;
-    [Tooltip("This is the explosion vfx for the player ship when the enemy crosses into the home planet")] [SerializeField] ParticleSystem explosionPlayer;
     [Tooltip("This is the spark that goes off when it takes damage")] [SerializeField] ParticleSystem hitSpark;
     [Tooltip("This is the enemy thruster")] [SerializeField] ParticleSystem thruster;
-
-    [Header("GameObjects")]
-    [SerializeField] GameObject passOverObject;
     
     
     [Header("All of the references")]
     [Tooltip("This is the player reference")] Player player;
     [Tooltip("This is the audiosource reference")] AudioSource aS;
     ScoreScript sS;
-
-
-    [Header("All Audio")]
-    [Tooltip("This is the destruction sfx")] [SerializeField] AudioClip destruction;
 
     //Make sure to cache our references
     void Start()
@@ -36,14 +28,6 @@ public class BonusLevelEnemy : MonoBehaviour
     void Update()
     {
         transform.Translate(0, 0, 0.1f * Time.deltaTime * 30);
-        if (hitSpark == null)
-        {
-            return;
-        }
-        if (explosionPlayer == null)
-        {
-            return;
-        }
     }
 
     //On particle collision
@@ -59,10 +43,6 @@ public class BonusLevelEnemy : MonoBehaviour
             sS.IncreaseScore(38);
             if (hitPoints == 0)
             {
-                if (!aS.isPlaying)
-                {
-                    aS.PlayOneShot(destruction);
-                }
                 GetComponent<MeshRenderer>().enabled = false;
                 GetComponent<BonusLevelEnemy>().enabled = false;
                 GetComponent<BoxCollider>().enabled = false;

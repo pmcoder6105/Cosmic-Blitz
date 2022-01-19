@@ -12,6 +12,7 @@ TagManager:
   - BossTrigger
   - Portal
   - NewWaveSpawner
+  - DestroyToRunGameFaster
   layers:
   - Default
   - TransparentFX
