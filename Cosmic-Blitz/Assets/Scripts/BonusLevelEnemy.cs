@@ -19,9 +19,10 @@ public class BonusLevelEnemy : MonoBehaviour
     [Header("All of the references")]
     [Tooltip("This is the player reference")] Player player;
     [Tooltip("This is the audiosource reference")] AudioSource aS;
+    ScoreScript sS;
 
 
-    [Header("AudioClips")]
+    [Header("All Audio")]
     [Tooltip("This is the destruction sfx")] [SerializeField] AudioClip destruction;
 
     //Make sure to cache our references
@@ -29,6 +30,7 @@ public class BonusLevelEnemy : MonoBehaviour
     {
         player = FindObjectOfType<Player>();
         aS = GetComponent<AudioSource>();
+        sS = FindObjectOfType<ScoreScript>();
     }
 
     void Update()
@@ -53,7 +55,8 @@ public class BonusLevelEnemy : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             hitPoints = hitPoints - 1;
-            hitSpark.Play();            
+            hitSpark.Play();
+            sS.IncreaseScore(38);
             if (hitPoints == 0)
             {
                 if (!aS.isPlaying)
@@ -74,8 +77,6 @@ public class BonusLevelEnemy : MonoBehaviour
                 }
             }
         }
-
-
     }
 
     //What happens on collision
