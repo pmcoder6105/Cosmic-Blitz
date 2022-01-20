@@ -52,4 +52,9 @@ public class MenuButtons : MonoBehaviour
         Application.Quit();
         Debug.Log("quit");
     }
+
+    public void PlayBonusLevel()
+    {
+        SceneManager.LoadScene(9);
+    }
 }
