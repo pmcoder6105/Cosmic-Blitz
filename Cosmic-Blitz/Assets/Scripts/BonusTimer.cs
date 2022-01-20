@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BonusTextScript : MonoBehaviour
+public class BonusTimer : MonoBehaviour
 {
     TMP_Text timer;
 
@@ -17,5 +17,10 @@ public class BonusTextScript : MonoBehaviour
     {
         string timeSinceLevelLoaded = Time.timeSinceLevelLoad.ToString();
         timer.text = timeSinceLevelLoaded;
+    }
+
+    public void ChangeTextToDone()
+    {
+        timer.text = "Finished!";
     }
 }

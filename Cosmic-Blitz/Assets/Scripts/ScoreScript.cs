@@ -4,8 +4,8 @@ using UnityEngine;
 public class ScoreScript : MonoBehaviour
 {
     TMP_Text score;
-    int scoreAmount;
-    
+    public int scoreAmount;
+
     // Start is called before the first frame update
     void Start()
     {

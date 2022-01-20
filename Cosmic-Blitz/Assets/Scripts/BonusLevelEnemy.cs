@@ -10,12 +10,15 @@ public class BonusLevelEnemy : MonoBehaviour
     [Tooltip("This is the explosion")] [SerializeField] ParticleSystem explosion;
     [Tooltip("This is the spark that goes off when it takes damage")] [SerializeField] ParticleSystem hitSpark;
     [Tooltip("This is the enemy thruster")] [SerializeField] ParticleSystem thruster;
-    
-    
+    [SerializeField] GameObject WinScreen;
+    [SerializeField] GameObject LoseScreen;
+
+
     [Header("All of the references")]
     [Tooltip("This is the player reference")] Player player;
     [Tooltip("This is the audiosource reference")] AudioSource aS;
     ScoreScript sS;
+    BonusTimer bT;
 
     //Make sure to cache our references
     void Start()
@@ -23,11 +26,39 @@ public class BonusLevelEnemy : MonoBehaviour
         player = FindObjectOfType<Player>();
         aS = GetComponent<AudioSource>();
         sS = FindObjectOfType<ScoreScript>();
+        bT = FindObjectOfType<BonusTimer>();
     }
 
     void Update()
     {
         transform.Translate(0, 0, 0.1f * Time.deltaTime * 30);
+        if (Time.timeSinceLevelLoad >= 30)
+        {
+            if (player.rightLazer.isStopped != true)
+            {
+                player.rightLazer.Stop();
+            }
+            if (player.leftLazer.isStopped != true)
+            {
+                player.leftLazer.Stop();
+            }
+            bT.ChangeTextToDone();
+            Time.timeScale = 0.5f;
+            Invoke(nameof(FinishBonus), 0.5f);
+        }
+    }
+
+    void FinishBonus()
+    {
+        if (sS.scoreAmount >= 24000f)
+        {
+            WinScreen.SetActive(true);
+            player.winBoostFlame.Play();
+        }
+        if (sS.scoreAmount < 24000f)
+        {
+            LoseScreen.SetActive(true);
+        }
     }
 
     //On particle collision

@@ -4,12 +4,12 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [Header("All of the ship visuals")]
-    [Tooltip("This is the left laser on the player ship")] [SerializeField] ParticleSystem leftLazer;
-    [Tooltip("This is the right laser on the player ship")] [SerializeField] ParticleSystem rightLazer;
+    [Tooltip("This is the left laser on the player ship")] [SerializeField] public ParticleSystem leftLazer;
+    [Tooltip("This is the right laser on the player ship")] [SerializeField] public ParticleSystem rightLazer;
     [Tooltip("This is the explosion vfx for the player ship")] [SerializeField] ParticleSystem explosion;
     [Tooltip("This is the main thruster on the player ship")] [SerializeField] public ParticleSystem thruster;
     [Tooltip("This is the spark vfx  that goes off when someone damages the player ship")] [SerializeField] ParticleSystem hitSpark;
-    [Tooltip("This is the win vfx that plays when the player ship defeats all enemies")] [SerializeField] ParticleSystem winBoostFlame;
+    [Tooltip("This is the win vfx that plays when the player ship defeats all enemies")] [SerializeField] public ParticleSystem winBoostFlame;
     [Tooltip("This is the left thruster on the player ship")] [SerializeField] ParticleSystem leftThruster;
     [Tooltip("This is the right thruster on the player ship")] [SerializeField] ParticleSystem rightThruster;
 
