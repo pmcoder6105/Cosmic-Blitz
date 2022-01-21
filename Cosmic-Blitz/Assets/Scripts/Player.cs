@@ -65,6 +65,7 @@ public class Player : MonoBehaviour
     [Tooltip("This is the clip of taking damage")] [SerializeField] AudioClip damage;
     [Tooltip("This is the clip of winning")] [SerializeField] AudioClip win;
     [Tooltip("This is the clip of loosing")] [SerializeField] AudioClip destruct;
+    float randomTimeline;
 
 
     //At Start(), we want to cache our references and make sure that Time = 0, so our player can read the instructions
@@ -75,6 +76,8 @@ public class Player : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         Time.timeScale = 0;
         lazerGenerator.GetComponent<Animator>().enabled = false;
+        randomTimeline = Random.Range(1, 3);
+        Debug.Log(randomTimeline);
     }
 
     //At Update(), we want to make sure that these three methods are running and working
