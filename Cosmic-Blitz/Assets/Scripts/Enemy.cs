@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] int hitPoints = 4;
+    [Header("All the tunables for the enemy")]
+    [Tooltip("This is how many hits the enemy ship can take")] [SerializeField] int hitPoints = 4;
     
     [Header("All the visuals for the enemy ship")]
     [Tooltip("This is the explosion")] [SerializeField] ParticleSystem explosion;

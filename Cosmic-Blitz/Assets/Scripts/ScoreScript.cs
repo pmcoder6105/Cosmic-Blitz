@@ -3,22 +3,21 @@ using UnityEngine;
 
 public class ScoreScript : MonoBehaviour
 {
-    TMP_Text score;
-    public int scoreAmount;
+    [Header("References")]
+    [Tooltip("Get the component TMP_Text")] TMP_Text score;
 
-    // Start is called before the first frame update
+    [Header("The variables")]
+    [Tooltip("This is the score")] public int scoreAmount;
+
+    //Cache our references && Make sure the score is 0
     void Start()
     {
         score = GetComponent<TMP_Text>();
         score.text = "0";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //Increase the score by the amount to increase
+    //Then display the score to the text on screen
     public void IncreaseScore(int amountToIncreaseScore)
     {
         scoreAmount = amountToIncreaseScore + scoreAmount;

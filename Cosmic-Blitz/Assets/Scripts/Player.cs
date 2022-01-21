@@ -68,6 +68,7 @@ public class Player : MonoBehaviour
 
 
     //At Start(), we want to cache our references and make sure that Time = 0, so our player can read the instructions
+    //We also want to make sure that the lazer generator light effect isn't animating
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
@@ -420,8 +421,6 @@ public class Player : MonoBehaviour
             }
             if (healthPoints == 6)
             {
-                //Destroy(DeadHeart4);
-                //Destroy(Heart4);
                 DeadHeart4.GetComponent<SpriteRenderer>().enabled = false;
                 Heart4.GetComponent<SpriteRenderer>().enabled = false;
             }
@@ -432,8 +431,6 @@ public class Player : MonoBehaviour
             }
             if (healthPoints == 4)
             {
-                //Destroy(DeadHeart3);
-                //Destroy(Heart3);
                 DeadHeart3.GetComponent<SpriteRenderer>().enabled = false;
                 Heart3.GetComponent<SpriteRenderer>().enabled = false;
             }
@@ -444,8 +441,6 @@ public class Player : MonoBehaviour
             }
             if (healthPoints == 2)
             {
-                //Destroy(DeadHeart2);
-                //Destroy(Heart2);
                 DeadHeart2.GetComponent<SpriteRenderer>().enabled = false;
                 Heart2.GetComponent<SpriteRenderer>().enabled = false;
             }
@@ -457,8 +452,6 @@ public class Player : MonoBehaviour
             if (healthPoints == 0)
             {
                 CollisionCrashSequence();
-                //Destroy(DeadHeart1);
-                //Destroy(Heart1);
                 DeadHeart1.GetComponent<SpriteRenderer>().enabled = false;
                 Heart1.GetComponent<SpriteRenderer>().enabled = false;
                 audioSource.PlayOneShot(destruct);

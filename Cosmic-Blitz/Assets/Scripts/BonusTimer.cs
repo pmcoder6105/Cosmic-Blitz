@@ -4,21 +4,23 @@ using UnityEngine.UI;
 
 public class BonusTimer : MonoBehaviour
 {
-    TMP_Text timer;
+    [Header("References")]
+    [Tooltip("Get the component TMP_Text")] TMP_Text timer;
 
-    // Start is called before the first frame update
+    //Cache references
     void Start()
     {
         timer = GetComponent<TMP_Text>();
     }
 
-    // Update is called once per frame
+    //Make sure that timer text is displaying the time
     void Update()
     {
         string timeSinceLevelLoaded = Time.timeSinceLevelLoad.ToString();
         timer.text = timeSinceLevelLoaded;
     }
 
+    //When this method is called, we will change the timer text to "Finished!"
     public void ChangeTextToDone()
     {
         timer.text = "Finished!";
