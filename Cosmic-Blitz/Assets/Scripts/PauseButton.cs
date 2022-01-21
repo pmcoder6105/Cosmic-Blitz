@@ -21,6 +21,7 @@ public class PauseButton : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    //This method is for reloading the scene which is used in the bonus level
     public void ReloadScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

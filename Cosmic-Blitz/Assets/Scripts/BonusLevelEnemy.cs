@@ -17,8 +17,8 @@ public class BonusLevelEnemy : MonoBehaviour
     [Header("All of the references")]
     [Tooltip("This is the player reference")] Player player;
     [Tooltip("This is the audiosource reference")] AudioSource aS;
-    ScoreScript sS;
-    BonusTimer bT;
+    [Tooltip("This is the scorescript reference")] ScoreScript sS;
+    [Tooltip("This is the bonustimer script reference")] BonusTimer bT;
 
     //Make sure to cache our references
     void Start()
@@ -29,44 +29,57 @@ public class BonusLevelEnemy : MonoBehaviour
         bT = FindObjectOfType<BonusTimer>();
     }
 
+    //Reminder: this script is only for the enemies in the bonus level
+    //We want to move the ships on a constant rate toward the player
+    //If the time since the level loaded is more or equal to 30
+    //We want to make the timer say finished
+    //We want to slow down time
+    //And call FinishBonus() in .5 seconds
     void Update()
     {
         transform.Translate(0, 0, 0.1f * Time.deltaTime * 30);
         if (Time.timeSinceLevelLoad >= 30)
         {
-            if (player.rightLazer.isStopped != true)
-            {
-                player.rightLazer.Stop();
-            }
-            if (player.leftLazer.isStopped != true)
-            {
-                player.leftLazer.Stop();
-            }
             bT.ChangeTextToDone();
             Time.timeScale = 0.5f;
             Invoke(nameof(FinishBonus), 0.5f);
         }
     }
 
+    //This method is for checking the score and executing certain things
     void FinishBonus()
     {
+        //If the score is greater than or equal to 24000
+        //We want to activate the win screen
+        //We want to make sure that the enemy can't be damaged by disabling the box collider
+        //We want to play the win boost flame
         if (sS.scoreAmount >= 24000f)
         {
             WinScreen.SetActive(true);
-            player.winBoostFlame.Play();
+            GetComponent<BoxCollider>().enabled = false;
+            if (!player.winBoostFlame.isPlaying)
+            {
+                player.winBoostFlame.Play();
+            }
         }
+
+        //If the score is less than or equal to 24000
+        //We want to activate the lose screen
+        //We want to make sure that the enemy can't be damaged by disabling the box collider
         if (sS.scoreAmount < 24000f)
         {
             LoseScreen.SetActive(true);
+            GetComponent<BoxCollider>().enabled = false;
         }
     }
 
     //On particle collision
     void OnParticleCollision(GameObject other)
     {
-        //If the particle was a player particle
+        //If the particle was a player lazer particle
         //reduce hit points by 1
         //play a vfx
+        //also increase the score by 38
         if (other.gameObject.tag == "Player")
         {
             hitPoints = hitPoints - 1;
@@ -93,10 +106,7 @@ public class BonusLevelEnemy : MonoBehaviour
     //What happens on collision
     void OnCollisionEnter(Collision other)
     {
-        //If the collider is the enemy finish pad
-        //play explosionPlayer vfx
-        //Call DestroyWhenEnemyFinishes from the player script
-        //Finally, load the current scene in 2 seconds
+        //If the enemy collides with the player, instantly destroy the player
         if (other.gameObject.tag == "Player")
         {
             player.CollisionCrashSequence();

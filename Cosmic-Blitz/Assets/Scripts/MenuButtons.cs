@@ -53,6 +53,7 @@ public class MenuButtons : MonoBehaviour
         Debug.Log("quit");
     }
 
+    //This method is for loading the bonus level in the menu && ending
     public void PlayBonusLevel()
     {
         SceneManager.LoadScene(9);
