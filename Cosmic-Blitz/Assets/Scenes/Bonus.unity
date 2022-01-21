@@ -507,9 +507,9 @@ Transform:
   - {fileID: 659910861}
   - {fileID: 652566318}
   - {fileID: 1916899109}
+  - {fileID: 5385540791165123054}
   - {fileID: 1787717626}
   - {fileID: 7660452178307804215}
-  - {fileID: 5385540791165123054}
   - {fileID: 7032249042564231793}
   - {fileID: 1411632983}
   m_Father: {fileID: 1681409768}
@@ -93972,7 +93972,7 @@ Transform:
   - {fileID: 3546698010358017219}
   - {fileID: 234174409033503272}
   m_Father: {fileID: 7248976}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &5449518785601051890
 Animator:

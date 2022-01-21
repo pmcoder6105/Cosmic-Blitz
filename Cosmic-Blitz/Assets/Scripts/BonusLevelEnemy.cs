@@ -21,6 +21,7 @@ public class BonusLevelEnemy : MonoBehaviour
     [Tooltip("This is the scorescript reference")] ScoreScript sS;
     [Tooltip("This is the bonustimer script reference")] BonusTimer bT;
 
+
     //Make sure to cache our references
     void Start()
     {
