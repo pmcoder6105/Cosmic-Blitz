@@ -1110,7 +1110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!320 &92804265
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -21286,6 +21286,8 @@ PlayableDirector:
     value: {fileID: 30052574}
   - key: {fileID: -4162754555085650910, guid: f5b24ffe6b7d0e849be5ffc67f3429b6, type: 2}
     value: {fileID: 7944567895506965256}
+  - key: {fileID: -4226322989444378888, guid: f5b24ffe6b7d0e849be5ffc67f3429b6, type: 2}
+    value: {fileID: 1912748733}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1569129256
@@ -22565,6 +22567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1912748732}
+  - component: {fileID: 1912748733}
   m_Layer: 0
   m_Name: Decor
   m_TagString: Untagged
@@ -22588,6 +22591,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1912748733
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912748731}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1963215293
 GameObject:
   m_ObjectHideFlags: 0
