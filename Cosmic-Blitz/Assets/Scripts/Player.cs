@@ -66,6 +66,8 @@ public class Player : MonoBehaviour
     [Tooltip("This is the clip of winning")] [SerializeField] AudioClip win;
     [Tooltip("This is the clip of loosing")] [SerializeField] AudioClip destruct;
     float randomTimeline;
+    [SerializeField] GameObject timeline1;
+    [SerializeField] GameObject timeline2;
 
 
     //At Start(), we want to cache our references and make sure that Time = 0, so our player can read the instructions
@@ -78,6 +80,20 @@ public class Player : MonoBehaviour
         lazerGenerator.GetComponent<Animator>().enabled = false;
         randomTimeline = Random.Range(1, 3);
         Debug.Log(randomTimeline);
+        if (randomTimeline == 1)
+        {
+            if (timeline1 != null)
+            {
+                timeline1.SetActive(true);
+            }
+        }
+        if (randomTimeline == 2)
+        {
+            if (timeline2 != null)
+            {
+                timeline2.SetActive(true);
+            }
+        }
     }
 
     //At Update(), we want to make sure that these three methods are running and working
