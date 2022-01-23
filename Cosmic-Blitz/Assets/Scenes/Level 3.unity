@@ -149,6 +149,10 @@ PrefabInstance:
       value: Enemy Ship 9
       objectReference: {fileID: 0}
     - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
+      propertyPath: thruster
+      value: 
+      objectReference: {fileID: 463016399}
+    - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
       propertyPath: hitPoints
       value: 6
       objectReference: {fileID: 0}
@@ -21256,7 +21260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!320 &1569129255
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -24689,6 +24693,10 @@ PrefabInstance:
       value: Enemy Ship 9
       objectReference: {fileID: 0}
     - target: {fileID: 3528099304880543820, guid: 01436879b682a6e43a630f237c9dcc60, type: 3}
+      propertyPath: thruster
+      value: 
+      objectReference: {fileID: 249356587}
+    - target: {fileID: 3528099304880543820, guid: 01436879b682a6e43a630f237c9dcc60, type: 3}
       propertyPath: hitPoints
       value: 6
       objectReference: {fileID: 0}
@@ -24914,12 +24922,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 807121186, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 807121186, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 807121189, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 864032005, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 864032005, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: m_TagString
@@ -24930,12 +24946,20 @@ PrefabInstance:
       value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 996585301, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 996585301, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 996585304, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994945060, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1994945060, guid: 5c06bb2382410624ba5f6453d819a694, type: 3}
       propertyPath: m_TagString

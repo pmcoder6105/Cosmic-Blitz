@@ -8498,9 +8498,17 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6360211601168109196, guid: a78fd373dd16173428558dda7c4a6db9, type: 3}
+      propertyPath: leftLazer2
+      value: 
+      objectReference: {fileID: 1749290477}
+    - target: {fileID: 6360211601168109196, guid: a78fd373dd16173428558dda7c4a6db9, type: 3}
       propertyPath: destruction
       value: 
       objectReference: {fileID: 8300000, guid: f01c623f724825e44a923d1ae50256f2, type: 3}
+    - target: {fileID: 6360211601168109196, guid: a78fd373dd16173428558dda7c4a6db9, type: 3}
+      propertyPath: rightLazer2
+      value: 
+      objectReference: {fileID: 1279843477}
     - target: {fileID: 6360211601168109196, guid: a78fd373dd16173428558dda7c4a6db9, type: 3}
       propertyPath: explosionPlayer
       value: 
@@ -41412,6 +41420,14 @@ PrefabInstance:
       propertyPath: boundary
       value: 
       objectReference: {fileID: 2065334318}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: timeline1
+      value: 
+      objectReference: {fileID: 1025476539}
+    - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
+      propertyPath: timeline2
+      value: 
+      objectReference: {fileID: 1331180460}
     - target: {fileID: 7660452178301677695, guid: de1618b9010423f46a917b46264f9f13, type: 3}
       propertyPath: DeadHeart1
       value: 

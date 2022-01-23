@@ -36719,6 +36719,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721478613}
   m_CullTransparentMesh: 1
+--- !u!198 &1725213783 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198198661817966188, guid: 3d35e81bdc5955041be098ef22e82a3b, type: 3}
+  m_PrefabInstance: {fileID: 94221094}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1726394953
 GameObject:
   m_ObjectHideFlags: 0
@@ -48749,6 +48754,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: f01c623f724825e44a923d1ae50256f2, type: 3}
     - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
+      propertyPath: e11v3Thruster
+      value: 
+      objectReference: {fileID: 1049294755}
+    - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
+      propertyPath: e11v4Thruster
+      value: 
+      objectReference: {fileID: 3807536022367793272}
+    - target: {fileID: 4499521994575036234, guid: f66ea954172cd094981c8fcc025c2415, type: 3}
       propertyPath: explosionPlayer
       value: 
       objectReference: {fileID: 368716665}
@@ -49426,13 +49439,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+      propertyPath: thruster
+      value: 
+      objectReference: {fileID: 1725213783}
+    - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
       propertyPath: hitPoints
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+      propertyPath: leftLazer1
+      value: 
+      objectReference: {fileID: 21411337}
+    - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
       propertyPath: destruction
       value: 
       objectReference: {fileID: 8300000, guid: f01c623f724825e44a923d1ae50256f2, type: 3}
+    - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
+      propertyPath: rightLazer1
+      value: 
+      objectReference: {fileID: 1660542298}
     - target: {fileID: 7944567895617739610, guid: c4a64818cc005cf478852450c0c39cc6, type: 3}
       propertyPath: explosionPlayer
       value: 
