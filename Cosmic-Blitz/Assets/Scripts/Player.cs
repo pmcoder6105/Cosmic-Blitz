@@ -65,9 +65,12 @@ public class Player : MonoBehaviour
     [Tooltip("This is the clip of taking damage")] [SerializeField] AudioClip damage;
     [Tooltip("This is the clip of winning")] [SerializeField] AudioClip win;
     [Tooltip("This is the clip of loosing")] [SerializeField] AudioClip destruct;
-    float randomTimeline;
-    [SerializeField] GameObject timeline1;
-    [SerializeField] GameObject timeline2;
+    
+    
+    [Header("Timeline")]
+    [Tooltip("The var that will store the random choosing")] float randomTimeline;
+    [Tooltip("The first timeline")] [SerializeField] GameObject timeline1;
+    [Tooltip("The second timeline")] [SerializeField] GameObject timeline2;
 
 
     //At Start(), we want to cache our references and make sure that Time = 0, so our player can read the instructions
@@ -78,6 +81,11 @@ public class Player : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         Time.timeScale = 0;
         lazerGenerator.GetComponent<Animator>().enabled = false;
+        ChooseTimeline();
+    }
+
+    private void ChooseTimeline()
+    {
         randomTimeline = Random.Range(1, 3);
         Debug.Log(randomTimeline);
         if (randomTimeline == 1)
