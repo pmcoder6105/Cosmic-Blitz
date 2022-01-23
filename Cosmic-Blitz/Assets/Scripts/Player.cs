@@ -84,7 +84,10 @@ public class Player : MonoBehaviour
         ChooseTimeline();
     }
 
-    private void ChooseTimeline()
+    //We assign randomTimeline float to a random range from 1-3, which will result in either 1 or 2
+    //Just for developing purposes, we debug.log it so we can see what timeline has been chosen
+    //Then, we just set the chosen timeline active if it is assigned, in the first place
+    void ChooseTimeline()
     {
         randomTimeline = Random.Range(1, 3);
         Debug.Log(randomTimeline);
