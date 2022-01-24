@@ -21,4 +21,6 @@ First of all, all of these packs are free to use, and are very high quality
 
 7: "Procedural fire" for thrusters, explosions, more. Link: https://assetstore.unity.com/packages/vfx/particles/fire-explosions/procedural-fire-141496
 
-8:
+8: "Win Sound #1" for win sfx. This package has two sfxs. Link: https://opengameart.org/content/win-sound-1
+
+9: "Low Poly Space Rocks" for level 6 decor & for enemy boss & level 6 enemies. Link: https://assetstore.unity.com/packages/3d/environments/sci-fi/low-poly-space-rocks-58385
