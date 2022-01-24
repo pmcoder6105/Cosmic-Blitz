@@ -9,7 +9,7 @@ First of all, all of these packs are free to use, and are very high quality
 
 1: "Star Sparrow Modular Spaceship" for all space ships. Link: https://assetstore.unity.com/packages/3d/vehicles/space/star-sparrow-modular-spaceship-73167
 
-2: "Shooting Sound" for all but destruction sfx. Link: https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096
+2: "Shooting Sound" for laser sfx and damage sfx. Link: https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096
 
 3: "Grenade Sound FX" for destruction sfx. Link: https://assetstore.unity.com/packages/audio/sound-fx/grenade-sound-fx-147490
 
@@ -17,8 +17,8 @@ First of all, all of these packs are free to use, and are very high quality
 
 5: "Bridges 3D Basic Pack" for level 6 decor. Link: https://assetstore.unity.com/packages/3d/environments/sci-fi/bridges-3d-basic-pack-21302
 
-6:
+6: "Skybox Series Free" for space skybox. Link: https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
 
-7:
+7: "Procedural fire" for thrusters, explosions, more. Link: https://assetstore.unity.com/packages/vfx/particles/fire-explosions/procedural-fire-141496
 
 8:
