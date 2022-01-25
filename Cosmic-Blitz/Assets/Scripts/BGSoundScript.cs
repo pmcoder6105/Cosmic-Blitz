@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 public class BGSoundScript : MonoBehaviour
 {
     //This script is to make sure that the music plays through all scenes and doesn't restart when scene changes
