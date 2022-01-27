@@ -113,6 +113,15 @@ public class Player : MonoBehaviour
         ProcessShip();
         WinOnEnemyDestruction();
         MakeSureCollisionDoesntAffectPlayerPosition();
+        QuitWhenEscIsClicked();
+    }
+
+    void QuitWhenEscIsClicked()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     //In this method, we want to make sure that collision doesn't affect the player's velocity
