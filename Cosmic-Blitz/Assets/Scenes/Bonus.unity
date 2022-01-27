@@ -426,6 +426,8 @@ MonoBehaviour:
   damage: {fileID: 8300000, guid: ab297b593498a6e47ba84de770477cbe, type: 3}
   win: {fileID: 8300000, guid: f7c43ae45ad546f40b845d7f88b24352, type: 3}
   destruct: {fileID: 8300000, guid: f01c623f724825e44a923d1ae50256f2, type: 3}
+  timeline1: {fileID: 0}
+  timeline2: {fileID: 0}
 --- !u!65 &7248973
 BoxCollider:
   m_ObjectHideFlags: 0
