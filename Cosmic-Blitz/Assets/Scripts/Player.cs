@@ -107,7 +107,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    //At Update(), we want to make sure that these three methods are running and working
+    //At Update(), we want to make sure that these four methods are running and working
     void Update()
     {
         ProcessShip();
@@ -116,6 +116,7 @@ public class Player : MonoBehaviour
         QuitWhenEscIsClicked();
     }
 
+    //If you click the esc button, then quit the application
     void QuitWhenEscIsClicked()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
