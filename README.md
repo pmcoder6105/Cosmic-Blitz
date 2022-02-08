@@ -26,3 +26,5 @@ First of all, all of these packs are free to use, and are very high quality
 9: "Low Poly Space Rocks" for level 6 decor & for enemy boss & level 6 enemies. Link: https://assetstore.unity.com/packages/3d/environments/sci-fi/low-poly-space-rocks-58385
 
 10: "Deep In Space" for background music in all levels. Link: https://assetstore.unity.com/packages/audio/music/electronic/deep-in-space-88071
+
+11: "Warp Engine Engage Sound" for main engine thrust. Link: https://opengameart.org/content/warp-engine-engage-sound
