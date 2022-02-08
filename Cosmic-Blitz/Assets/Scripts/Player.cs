@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     [Tooltip("This is the seventh enemy")] [SerializeField] GameObject enemyShip7;
     [Tooltip("This is the boundaries needed to keep the player ship in place")] [SerializeField] GameObject boundary;
     [Tooltip("This is the lazer generator light effect that plays when you shoot a lazer")][SerializeField] public GameObject lazerGenerator;
+    [Tooltip("This is the audiosource gameobject that plays the thrust audiofx. I'm using a different gameobject for this so that we can play both the lazer sound effect and the thrust one at the same time")] [SerializeField] GameObject thrustAudio;
 
 
     [Header("All of the tunables for the ship")]
@@ -257,10 +258,23 @@ public class Player : MonoBehaviour
             leftThruster.Stop();
         }
 
-        //If you click these buttons, move forward
+        //If you click these buttons, move forward and play thrust audio
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             rigidBody.AddRelativeForce(0, 0, 500 * Time.deltaTime * verticalControlSpeed);
+            if (thrustAudio.GetComponent<AudioSource>().isPlaying != true)
+            {
+                thrustAudio.GetComponent<AudioSource>().Play();
+            }
+        }
+        
+        //If you let go of these buttons, stop playing the audiosource sfx
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            if (thrustAudio.GetComponent<AudioSource>().isPlaying == true)
+            {
+                thrustAudio.GetComponent<AudioSource>().Pause();
+            }
         }
 
         //If you click these buttons, move back
