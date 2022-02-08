@@ -22,6 +22,7 @@ public class TravelToPlanet : MonoBehaviour
     void Update()
     {
         transform.Translate(0, 0, .2f * Time.deltaTime * verticalControlSpeed);
+        p.thrustAudio.GetComponent<AudioSource>().Play();
         if (Time.timeSinceLevelLoad > 10)
         {
             SceneManager.LoadScene(7);

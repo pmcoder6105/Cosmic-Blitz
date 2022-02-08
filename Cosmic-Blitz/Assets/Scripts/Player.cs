@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     [Tooltip("This is the seventh enemy")] [SerializeField] GameObject enemyShip7;
     [Tooltip("This is the boundaries needed to keep the player ship in place")] [SerializeField] GameObject boundary;
     [Tooltip("This is the lazer generator light effect that plays when you shoot a lazer")][SerializeField] public GameObject lazerGenerator;
-    [Tooltip("This is the audiosource gameobject that plays the thrust audiofx. I'm using a different gameobject for this so that we can play both the lazer sound effect and the thrust one at the same time")] [SerializeField] GameObject thrustAudio;
+    [Tooltip("This is the audiosource gameobject that plays the thrust audiofx. I'm using a different gameobject for this so that we can play both the lazer sound effect and the thrust one at the same time")] [SerializeField] public GameObject thrustAudio;
 
 
     [Header("All of the tunables for the ship")]
