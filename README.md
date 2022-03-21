@@ -1,4 +1,4 @@
-# Universe
+# Cosmic-Blitz
 This game is inspired off of the 1978 game Space Invaders. The main goal of this game is to battle the fleet of enemy ships and get to the enemy boss. Defeat it to win the game. There is also a bonus level included in this game where you have to destroy as many ships as you can before time runs out. If you get a good enough score, you win.
 
 # How to Build/Compile
