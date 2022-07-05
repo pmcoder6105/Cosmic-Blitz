@@ -264,7 +264,7 @@ public class Player : MonoBehaviour
             rigidBody.AddRelativeForce(0, 0, 500 * Time.deltaTime * verticalControlSpeed);
             if (thrustAudio.GetComponent<AudioSource>().isPlaying != true)
             {
-                thrustAudio.GetComponent<AudioSource>().Play();
+                thrustAudio.GetComponent<AudioSource>().volume = 1;
             }
         }
         
@@ -273,7 +273,7 @@ public class Player : MonoBehaviour
         {
             if (thrustAudio.GetComponent<AudioSource>().isPlaying == true)
             {
-                thrustAudio.GetComponent<AudioSource>().Pause();
+                thrustAudio.GetComponent<AudioSource>().volume = 0;
             }
         }
 
