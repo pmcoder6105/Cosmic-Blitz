@@ -83,6 +83,7 @@ public class Player : MonoBehaviour
         Time.timeScale = 0;
         lazerGenerator.GetComponent<Animator>().enabled = false;
         ChooseTimeline();
+        thrustAudio.GetComponent<AudioSource>().volume = 0;
     }
 
     //We assign randomTimeline float to a random range from 1-3, which will result in either 1 or 2
@@ -262,19 +263,13 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             rigidBody.AddRelativeForce(0, 0, 500 * Time.deltaTime * verticalControlSpeed);
-            if (thrustAudio.GetComponent<AudioSource>().isPlaying != true)
-            {
-                thrustAudio.GetComponent<AudioSource>().volume = 1;
-            }
+            thrustAudio.GetComponent<AudioSource>().volume = 1;
         }
         
         //If you let go of these buttons, stop playing the audiosource sfx
         if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
         {
-            if (thrustAudio.GetComponent<AudioSource>().isPlaying == true)
-            {
-                thrustAudio.GetComponent<AudioSource>().volume = 0;
-            }
+            thrustAudio.GetComponent<AudioSource>().volume = 0;
         }
 
         //If you click these buttons, move back
